@@ -1,0 +1,415 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Thu May 23 05:12:45 2024
+# Process ID: 1373400
+# Current directory: /doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6
+# Command line: vivado -mode batch -source /doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/vivado_rtl2syn.tcl
+# Log file: /doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/vivado.log
+# Journal file: /doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/vivado.jou
+# Running On: user-System-Product-Name, OS: Linux, CPU Frequency: 5511.891 MHz, CPU Physical cores: 24, Host memory: 134788 MB
+#-----------------------------------------------------------
+source /doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/vivado_rtl2syn.tcl
+# read_verilog /doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/Subsystem.v
+# synth_design -part xc7k70t -top Subsystem
+Command: synth_design -part xc7k70t -top Subsystem
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1373409
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1701.590 ; gain = 373.734 ; free physical = 23655 ; free virtual = 106061
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Subsystem' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/Subsystem.v:114]
+INFO: [Synth 8-6157] synthesizing module 'cfblk24' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk24.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'cfblk24' (0#1) [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk24.v:22]
+INFO: [Synth 8-6157] synthesizing module 'cfblk21' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk21.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'cfblk21' (0#1) [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk21.v:22]
+INFO: [Synth 8-6157] synthesizing module 'cfblk57' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk57.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'cfblk57' (0#1) [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk57.v:22]
+INFO: [Synth 8-6157] synthesizing module 'cfblk160' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk160.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'cfblk160' (0#1) [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk160.v:22]
+INFO: [Synth 8-6157] synthesizing module 'cfblk50' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk50.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'cfblk50' (0#1) [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk50.v:22]
+INFO: [Synth 8-6157] synthesizing module 'cfblk172' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk172.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'cfblk172' (0#1) [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk172.v:22]
+INFO: [Synth 8-6157] synthesizing module 'cfblk167' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk167.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'cfblk167' (0#1) [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk167.v:22]
+INFO: [Synth 8-6157] synthesizing module 'cfblk3' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk3.v:22]
+INFO: [Synth 8-6157] synthesizing module 'Nonnegative_block' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/Nonnegative_block.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'Nonnegative_block' (0#1) [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/Nonnegative_block.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'cfblk3' (0#1) [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk3.v:22]
+INFO: [Synth 8-6157] synthesizing module 'cfblk1_block' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk1_block.v:22]
+INFO: [Synth 8-6157] synthesizing module 'cfblk1' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk1.v:22]
+INFO: [Synth 8-6157] synthesizing module 'Nonnegative' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/Nonnegative.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'Nonnegative' (0#1) [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/Nonnegative.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'cfblk1' (0#1) [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk1.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'cfblk1_block' (0#1) [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk1_block.v:22]
+INFO: [Synth 8-6157] synthesizing module 'cfblk109' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk109.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'cfblk109' (0#1) [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk109.v:22]
+INFO: [Synth 8-6157] synthesizing module 'cfblk165' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk165.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'cfblk165' (0#1) [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk165.v:22]
+INFO: [Synth 8-6157] synthesizing module 'cfblk97_block' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk97_block.v:22]
+INFO: [Synth 8-6157] synthesizing module 'cfblk97' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk97.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'cfblk97' (0#1) [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk97.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'cfblk97_block' (0#1) [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk97_block.v:22]
+INFO: [Synth 8-6157] synthesizing module 'cfblk153' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk153.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'cfblk153' (0#1) [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk153.v:22]
+INFO: [Synth 8-6157] synthesizing module 'cfblk134' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk134.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'cfblk134' (0#1) [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk134.v:22]
+INFO: [Synth 8-6157] synthesizing module 'cfblk143' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk143.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'cfblk143' (0#1) [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk143.v:22]
+INFO: [Synth 8-6157] synthesizing module 'cfblk33' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk33.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'cfblk33' (0#1) [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk33.v:22]
+INFO: [Synth 8-6157] synthesizing module 'cfblk9' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk9.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'cfblk9' (0#1) [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk9.v:22]
+INFO: [Synth 8-6157] synthesizing module 'cfblk41' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk41.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'cfblk41' (0#1) [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk41.v:22]
+INFO: [Synth 8-6157] synthesizing module 'cfblk139' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk139.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'cfblk139' (0#1) [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk139.v:22]
+INFO: [Synth 8-6157] synthesizing module 'cfblk158' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk158.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'cfblk158' (0#1) [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk158.v:22]
+INFO: [Synth 8-6157] synthesizing module 'DotProduct_block' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/DotProduct_block.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'DotProduct_block' (0#1) [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/DotProduct_block.v:22]
+INFO: [Synth 8-6157] synthesizing module 'DotProduct_block2' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/DotProduct_block2.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'DotProduct_block2' (0#1) [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/DotProduct_block2.v:22]
+INFO: [Synth 8-6157] synthesizing module 'cfblk88' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk88.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'cfblk88' (0#1) [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk88.v:22]
+INFO: [Synth 8-6157] synthesizing module 'cfblk19' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk19.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'cfblk19' (0#1) [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk19.v:22]
+INFO: [Synth 8-6157] synthesizing module 'cfblk113' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk113.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'cfblk113' (0#1) [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk113.v:22]
+INFO: [Synth 8-6157] synthesizing module 'cfblk51' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk51.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'cfblk51' (0#1) [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk51.v:22]
+INFO: [Synth 8-6157] synthesizing module 'cfblk76' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk76.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'cfblk76' (0#1) [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk76.v:22]
+INFO: [Synth 8-6157] synthesizing module 'cfblk2' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk2.v:22]
+INFO: [Synth 8-6157] synthesizing module 'Positive' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/Positive.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'Positive' (0#1) [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/Positive.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'cfblk2' (0#1) [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk2.v:22]
+INFO: [Synth 8-6157] synthesizing module 'cfblk95' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk95.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'cfblk95' (0#1) [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk95.v:22]
+INFO: [Synth 8-6157] synthesizing module 'cfblk46' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk46.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'cfblk46' (0#1) [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk46.v:22]
+INFO: [Synth 8-6157] synthesizing module 'cfblk112' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk112.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'cfblk112' (0#1) [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk112.v:22]
+INFO: [Synth 8-6157] synthesizing module 'cfblk69' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk69.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'cfblk69' (0#1) [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk69.v:22]
+INFO: [Synth 8-6157] synthesizing module 'cfblk127' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk127.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'cfblk127' (0#1) [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk127.v:22]
+INFO: [Synth 8-6157] synthesizing module 'cfblk194' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk194.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'cfblk194' (0#1) [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk194.v:22]
+INFO: [Synth 8-6157] synthesizing module 'cfblk30_block' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk30_block.v:22]
+INFO: [Synth 8-6157] synthesizing module 'cfblk30' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk30.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'cfblk30' (0#1) [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk30.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'cfblk30_block' (0#1) [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk30_block.v:22]
+INFO: [Synth 8-6157] synthesizing module 'DotProduct_block7' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/DotProduct_block7.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'DotProduct_block7' (0#1) [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/DotProduct_block7.v:22]
+INFO: [Synth 8-6157] synthesizing module 'cfblk192' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk192.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'cfblk192' (0#1) [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk192.v:22]
+INFO: [Synth 8-6157] synthesizing module 'cfblk129' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk129.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'cfblk129' (0#1) [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk129.v:22]
+INFO: [Synth 8-6157] synthesizing module 'DotProduct_block4' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/DotProduct_block4.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'DotProduct_block4' (0#1) [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/DotProduct_block4.v:22]
+INFO: [Synth 8-6157] synthesizing module 'DotProduct_block3' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/DotProduct_block3.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'DotProduct_block3' (0#1) [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/DotProduct_block3.v:22]
+INFO: [Synth 8-6157] synthesizing module 'cfblk124' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk124.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'cfblk124' (0#1) [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk124.v:22]
+INFO: [Synth 8-6157] synthesizing module 'cfblk100' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk100.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'cfblk100' (0#1) [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk100.v:22]
+INFO: [Synth 8-6157] synthesizing module 'DotProduct' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/DotProduct.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'DotProduct' (0#1) [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/DotProduct.v:22]
+INFO: [Synth 8-6157] synthesizing module 'cfblk58' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk58.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'cfblk58' (0#1) [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk58.v:22]
+INFO: [Synth 8-6157] synthesizing module 'cfblk20' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk20.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'cfblk20' (0#1) [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk20.v:22]
+INFO: [Synth 8-6157] synthesizing module 'cfblk101' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk101.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'cfblk101' (0#1) [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk101.v:22]
+INFO: [Synth 8-6157] synthesizing module 'cfblk48_block' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk48_block.v:22]
+INFO: [Synth 8-6157] synthesizing module 'cfblk48' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk48.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'cfblk48' (0#1) [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk48.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'cfblk48_block' (0#1) [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk48_block.v:22]
+INFO: [Synth 8-6157] synthesizing module 'cfblk148' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk148.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'cfblk148' (0#1) [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk148.v:22]
+INFO: [Synth 8-6157] synthesizing module 'cfblk43' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk43.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'cfblk43' (0#1) [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk43.v:22]
+INFO: [Synth 8-6157] synthesizing module 'cfblk4' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk4.v:22]
+INFO: [Synth 8-6157] synthesizing module 'Nonpositive' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/Nonpositive.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'Nonpositive' (0#1) [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/Nonpositive.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'cfblk4' (0#1) [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk4.v:22]
+INFO: [Synth 8-6157] synthesizing module 'cfblk7' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk7.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'cfblk7' (0#1) [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk7.v:22]
+INFO: [Synth 8-6157] synthesizing module 'cfblk130' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk130.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'cfblk130' (0#1) [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk130.v:22]
+INFO: [Synth 8-6157] synthesizing module 'cfblk93' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk93.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'cfblk93' (0#1) [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk93.v:22]
+INFO: [Synth 8-6157] synthesizing module 'DotProduct_block1' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/DotProduct_block1.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'DotProduct_block1' (0#1) [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/DotProduct_block1.v:22]
+INFO: [Synth 8-6157] synthesizing module 'cfblk54' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk54.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'cfblk54' (0#1) [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk54.v:22]
+INFO: [Synth 8-6157] synthesizing module 'cfblk159_block' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk159_block.v:22]
+INFO: [Synth 8-6157] synthesizing module 'cfblk159' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk159.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'cfblk159' (0#1) [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk159.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'cfblk159_block' (0#1) [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk159_block.v:22]
+INFO: [Synth 8-6157] synthesizing module 'cfblk125' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk125.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'cfblk125' (0#1) [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk125.v:22]
+INFO: [Synth 8-6157] synthesizing module 'cfblk133' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk133.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'cfblk133' (0#1) [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk133.v:22]
+INFO: [Synth 8-6157] synthesizing module 'cfblk150_block' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk150_block.v:22]
+INFO: [Synth 8-6157] synthesizing module 'cfblk150' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk150.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'cfblk150' (0#1) [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk150.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'cfblk150_block' (0#1) [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk150_block.v:22]
+INFO: [Synth 8-6157] synthesizing module 'DotProduct_block5' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/DotProduct_block5.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'DotProduct_block5' (0#1) [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/DotProduct_block5.v:22]
+INFO: [Synth 8-6157] synthesizing module 'cfblk180' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk180.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'cfblk180' (0#1) [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/cfblk180.v:22]
+INFO: [Synth 8-6157] synthesizing module 'DotProduct_block6' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/DotProduct_block6.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'DotProduct_block6' (0#1) [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/DotProduct_block6.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'Subsystem' (0#1) [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/Subsystem.v:114]
+WARNING: [Synth 8-6014] Unused sequential element emi_282_reg_reg[0] was removed.  [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/Subsystem.v:650]
+WARNING: [Synth 8-6014] Unused sequential element emi_282_reg_reg[1] was removed.  [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/Subsystem.v:650]
+WARNING: [Synth 8-6014] Unused sequential element emi_210_reg_reg[0] was removed.  [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/Subsystem.v:676]
+WARNING: [Synth 8-6014] Unused sequential element emi_210_reg_reg[1] was removed.  [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/Subsystem.v:676]
+WARNING: [Synth 8-6014] Unused sequential element emi_218_reg_reg[0] was removed.  [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/Subsystem.v:702]
+WARNING: [Synth 8-6014] Unused sequential element emi_218_reg_reg[1] was removed.  [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/Subsystem.v:702]
+WARNING: [Synth 8-6014] Unused sequential element emi_15_reg_reg[0] was removed.  [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/Subsystem.v:876]
+WARNING: [Synth 8-6014] Unused sequential element emi_15_reg_reg[1] was removed.  [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/Subsystem.v:876]
+WARNING: [Synth 8-6014] Unused sequential element emi_299_reg_reg[0] was removed.  [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/Subsystem.v:1114]
+WARNING: [Synth 8-6014] Unused sequential element emi_299_reg_reg[1] was removed.  [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/Subsystem.v:1114]
+WARNING: [Synth 8-6014] Unused sequential element emi_250_reg_reg[0] was removed.  [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/Subsystem.v:1140]
+WARNING: [Synth 8-6014] Unused sequential element emi_250_reg_reg[1] was removed.  [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/Subsystem.v:1140]
+WARNING: [Synth 8-6014] Unused sequential element emi_266_reg_reg[0] was removed.  [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/Subsystem.v:1204]
+WARNING: [Synth 8-6014] Unused sequential element emi_266_reg_reg[1] was removed.  [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/Subsystem.v:1204]
+WARNING: [Synth 8-6014] Unused sequential element emi_23_reg_reg[0] was removed.  [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/Subsystem.v:1230]
+WARNING: [Synth 8-6014] Unused sequential element emi_23_reg_reg[1] was removed.  [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/Subsystem.v:1230]
+WARNING: [Synth 8-6014] Unused sequential element emi_146_reg_reg[0] was removed.  [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/Subsystem.v:1256]
+WARNING: [Synth 8-6014] Unused sequential element emi_146_reg_reg[1] was removed.  [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/Subsystem.v:1256]
+WARNING: [Synth 8-6014] Unused sequential element emi_348_reg_reg[0] was removed.  [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/Subsystem.v:1308]
+WARNING: [Synth 8-6014] Unused sequential element emi_348_reg_reg[1] was removed.  [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/Subsystem.v:1308]
+WARNING: [Synth 8-6014] Unused sequential element emi_31_reg_reg[0] was removed.  [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/Subsystem.v:1334]
+WARNING: [Synth 8-6014] Unused sequential element emi_31_reg_reg[1] was removed.  [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/Subsystem.v:1334]
+WARNING: [Synth 8-6014] Unused sequential element emi_7_reg_reg[0] was removed.  [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/Subsystem.v:1382]
+WARNING: [Synth 8-6014] Unused sequential element emi_7_reg_reg[1] was removed.  [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/Subsystem.v:1382]
+WARNING: [Synth 8-6014] Unused sequential element emi_122_reg_reg[0] was removed.  [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/Subsystem.v:1521]
+WARNING: [Synth 8-6014] Unused sequential element emi_122_reg_reg[1] was removed.  [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/Subsystem.v:1521]
+WARNING: [Synth 8-6014] Unused sequential element emi_114_reg_reg[0] was removed.  [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/Subsystem.v:1619]
+WARNING: [Synth 8-6014] Unused sequential element emi_114_reg_reg[1] was removed.  [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/Subsystem.v:1619]
+WARNING: [Synth 8-6014] Unused sequential element emi_106_reg_reg[0] was removed.  [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/Subsystem.v:1645]
+WARNING: [Synth 8-6014] Unused sequential element emi_106_reg_reg[1] was removed.  [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/Subsystem.v:1645]
+WARNING: [Synth 8-6014] Unused sequential element emi_89_reg_reg[0] was removed.  [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/Subsystem.v:2097]
+WARNING: [Synth 8-6014] Unused sequential element emi_89_reg_reg[1] was removed.  [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/Subsystem.v:2097]
+WARNING: [Synth 8-6014] Unused sequential element emi_186_reg_reg[0] was removed.  [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/Subsystem.v:2123]
+WARNING: [Synth 8-6014] Unused sequential element emi_186_reg_reg[1] was removed.  [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/Subsystem.v:2123]
+WARNING: [Synth 8-6014] Unused sequential element emi_307_reg_reg[0] was removed.  [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/Subsystem.v:2175]
+WARNING: [Synth 8-6014] Unused sequential element emi_307_reg_reg[1] was removed.  [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/Subsystem.v:2175]
+WARNING: [Synth 8-6014] Unused sequential element emi_56_reg_reg[0] was removed.  [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/Subsystem.v:2201]
+WARNING: [Synth 8-6014] Unused sequential element emi_56_reg_reg[1] was removed.  [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/Subsystem.v:2201]
+WARNING: [Synth 8-7129] Port u[7] in module Nonnegative is either unconnected or has no load
+WARNING: [Synth 8-7129] Port u[6] in module Nonnegative is either unconnected or has no load
+WARNING: [Synth 8-7129] Port u[5] in module Nonnegative is either unconnected or has no load
+WARNING: [Synth 8-7129] Port u[4] in module Nonnegative is either unconnected or has no load
+WARNING: [Synth 8-7129] Port u[3] in module Nonnegative is either unconnected or has no load
+WARNING: [Synth 8-7129] Port u[2] in module Nonnegative is either unconnected or has no load
+WARNING: [Synth 8-7129] Port u[1] in module Nonnegative is either unconnected or has no load
+WARNING: [Synth 8-7129] Port u[0] in module Nonnegative is either unconnected or has no load
+WARNING: [Synth 8-7129] Port u[7] in module Nonnegative_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port u[6] in module Nonnegative_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port u[5] in module Nonnegative_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port u[4] in module Nonnegative_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port u[3] in module Nonnegative_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port u[2] in module Nonnegative_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port u[1] in module Nonnegative_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port u[0] in module Nonnegative_block is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1791.527 ; gain = 463.672 ; free physical = 23542 ; free virtual = 105949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1809.340 ; gain = 481.484 ; free physical = 23542 ; free virtual = 105948
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k70tfbg676-3
+INFO: [Device 21-403] Loading part xc7k70tfbg676-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1817.344 ; gain = 489.488 ; free physical = 23542 ; free virtual = 105948
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1842.266 ; gain = 514.410 ; free physical = 23512 ; free virtual = 105919
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    8 Bit       Adders := 20    
+	   5 Input    8 Bit       Adders := 1     
+	   3 Input    8 Bit       Adders := 6     
+	   4 Input    8 Bit       Adders := 4     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 127   
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input   16 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 98    
+	   2 Input    1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1965.789 ; gain = 637.934 ; free physical = 23372 ; free virtual = 105784
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1965.789 ; gain = 637.934 ; free physical = 23372 ; free virtual = 105784
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1965.789 ; gain = 637.934 ; free physical = 23372 ; free virtual = 105784
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1965.789 ; gain = 637.934 ; free physical = 23371 ; free virtual = 105782
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1965.789 ; gain = 637.934 ; free physical = 23371 ; free virtual = 105782
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1965.789 ; gain = 637.934 ; free physical = 23371 ; free virtual = 105782
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1965.789 ; gain = 637.934 ; free physical = 23371 ; free virtual = 105782
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1965.789 ; gain = 637.934 ; free physical = 23371 ; free virtual = 105782
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1965.789 ; gain = 637.934 ; free physical = 23371 ; free virtual = 105782
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    62|
+|3     |LUT1   |    39|
+|4     |LUT2   |    89|
+|5     |LUT3   |   100|
+|6     |LUT4   |    60|
+|7     |LUT5   |    79|
+|8     |LUT6   |    66|
+|9     |FDCE   |   205|
+|10    |FDPE   |   148|
+|11    |IBUF   |     3|
+|12    |OBUF   |     9|
++------+-------+------+
+
+Report Instance Areas: 
++------+------------------+------------------+------+
+|      |Instance          |Module            |Cells |
++------+------------------+------------------+------+
+|1     |top               |                  |   861|
+|2     |  u_cfblk112      |cfblk112          |    40|
+|3     |  u_cfblk127      |cfblk127          |     1|
+|4     |  u_cfblk138_inst |DotProduct_block  |    70|
+|5     |  u_cfblk159      |cfblk159_block    |    11|
+|6     |  u_cfblk172      |cfblk172          |   155|
+|7     |  u_cfblk19       |cfblk19           |    71|
+|8     |  u_cfblk3        |cfblk3            |    91|
+|9     |  u_cfblk37_inst  |DotProduct_block2 |    35|
+|10    |  u_cfblk46       |cfblk46           |    11|
+|11    |  u_cfblk54       |cfblk54           |    14|
+|12    |  u_cfblk58       |cfblk58           |    27|
+|13    |  u_cfblk69       |cfblk69           |    11|
+|14    |  u_cfblk88       |cfblk88           |    16|
+|15    |  u_cfblk95       |cfblk95           |    40|
++------+------------------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1965.789 ; gain = 637.934 ; free physical = 23371 ; free virtual = 105782
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 55 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1965.789 ; gain = 637.934 ; free physical = 23371 ; free virtual = 105782
+Synthesis Optimization Complete : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1965.797 ; gain = 637.934 ; free physical = 23371 ; free virtual = 105782
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 1965.797 ; gain = 0.000 ; free physical = 23656 ; free virtual = 106068
+INFO: [Netlist 29-17] Analyzing 62 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2082.629 ; gain = 0.000 ; free physical = 23615 ; free virtual = 106027
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: a51a0f5a
+INFO: [Common 17-83] Releasing license: Synthesis
+158 Infos, 55 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 2082.664 ; gain = 754.852 ; free physical = 23615 ; free virtual = 106027
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1286.998; main = 1286.998; forked = 0.000
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 2082.633; main = 2082.633; forked = 0.000
+# write_verilog -force /doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/Subsystem_vivado.v
+INFO: [Common 17-206] Exiting Vivado at Thu May 23 05:12:59 2024...

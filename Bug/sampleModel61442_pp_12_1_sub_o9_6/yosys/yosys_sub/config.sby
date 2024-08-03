@@ -1,0 +1,79 @@
+[options]
+multiclock on
+mode prove
+aigsmt none
+[engines]
+abc pdr
+[script]
+read -formal /doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/yosys/Subsystem.v
+read -formal /doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/yosys/Subsystem_yosys.v
+read -formal /doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/yosys/top.v
+prep -top top
+[files]
+/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/Subsystem.v
+/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/Subsystem_yosys.v
+/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/top.v
+/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/cfblk78.v
+/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/cfblk134.v
+/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/cfblk71.v
+/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/cfblk21.v
+/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/cfblk79.v
+/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/cfblk48.v
+/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/DotProduct_block4.v
+/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/cfblk125.v
+/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/DotProduct_block.v
+/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/cfblk84.v
+/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/cfblk184.v
+/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/cfblk2.v
+/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/cfblk20.v
+/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/cfblk124.v
+/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/DotProduct_block3.v
+/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/cfblk121.v
+/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/cfblk109.v
+/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/cfblk77.v
+/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/cfblk180.v
+/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/DotProduct_block2.v
+/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/cfblk97.v
+/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/cfblk3.v
+/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/cfblk2_block.v
+/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/cfblk116.v
+/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/cfblk15.v
+/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/cfblk31.v
+/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/DotProduct_block8.v
+/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/cfblk108.v
+/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/cfblk145.v
+/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/cfblk143.v
+/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/cfblk28_block.v
+/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/DotProduct_block7.v
+/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/cfblk1.v
+/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/DotProduct_block1.v
+/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/cfblk72.v
+/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/cfblk157.v
+/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/cfblk81.v
+/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/Positive.v
+/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/cfblk1_block.v
+/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/DotProduct_block6.v
+/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/DotProduct_block5.v
+/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/cfblk192.v
+/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/cfblk106.v
+/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/cfblk188.v
+/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/cfblk100.v
+/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/cfblk11.v
+/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/cfblk91.v
+/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/cfblk156.v
+/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/DotProduct.v
+/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/cfblk119.v
+/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/cfblk77_block.v
+/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/cfblk28.v
+/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/cfblk80.v
+/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/cfblk137.v
+/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/cfblk153.v
+/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/cfblk119_block.v
+/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/cfblk3_block.v
+/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/cfblk110.v
+/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/cfblk32.v
+/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/cfblk181.v
+/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/cfblk185.v
+/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/cfblk168.v
+/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/cfblk144.v
+/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/cfblk105.v

@@ -1,0 +1,4 @@
+input 0 0 clk
+input 1 0 clk_enable
+input 2 0 reset
+ninitff 102

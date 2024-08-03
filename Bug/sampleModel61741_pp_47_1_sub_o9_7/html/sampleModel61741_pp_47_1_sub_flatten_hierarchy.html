@@ -1,0 +1,623 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="rtwreport.css" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>
+Hierarchy Flattening Report for sampleModel61741_pp_47_1_sub
+</title>
+
+</head>
+<body bgcolor="#ffffff" link="0033CC" vlink="#666666" onload="try {if (top) {if (top.rtwPageOnLoad) top.rtwPageOnLoad('rtwIdFlattenHierarchy'); else local_onload();}} catch(err) {};">
+<font SIZE="+2" COLOR="#000066">
+Hierarchy Flattening Report for sampleModel61741_pp_47_1_sub
+</font>
+<br /><br /><br /><script>
+<!--
+function hdlTableShrink(o,tagNameStr)
+{
+var temp = document.getElementsByName(tagNameStr);
+if (temp[0].style.display == "")
+{
+	temp[0].style.display = "none";
+	o.innerHTML = '<span style="font-family:monospace">[+]</span>';
+}
+else
+{
+	temp[0].style.display = "";
+	o.innerHTML = '<span style="font-family:monospace">[-]</span>';
+}
+}
+// -->
+</script>
+<script>
+<!--
+function hdlTableCollapseAll(o, numNtks, numComps)
+{
+	var id = "";
+	for (i = 1; i <= numNtks; i++)
+	{
+		for (j = 1; j <= numComps; j++)
+		{
+			id = "Multiply" + "_" + i + "_" + j;
+			var temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "none";
+			}
+			id = "Adder" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "none";
+			}
+			id = "Subtractor" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "none";
+			}
+			id = "Register" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "none";
+			}
+			id = "RAM" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "none";
+			}
+			id = "Multiplexer" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "none";
+			}
+		}
+	}
+	var collapsibles = document.getElementsByName('collapsible');
+	for (i = 0; i < collapsibles.length; i++)
+	{
+		collapsibles[i].innerHTML = '<span style="font-family:monospace">[+]</span>';
+	}
+}
+// -->
+</script>
+<script>
+<!--
+function hdlTableExpandAll(o, numNtks, numComps)
+{
+	var id = "";
+	for (i = 1; i <= numNtks; i++)
+	{
+		for (j = 1; j <= numComps; j++)
+		{
+			id = "Multiply" + "_" + i + "_" + j;
+			var temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "";
+			}
+			id = "Adder" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "";
+			}
+			id = "Subtractor" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "";
+			}
+			id = "Register" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "";
+			}
+			id = "RAM" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "";
+			}
+			id = "Multiplexer" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "";
+			}
+		}
+	}
+	var collapsibles = document.getElementsByName('collapsible');
+	for (i = 0; i < collapsibles.length; i++)
+	{
+		collapsibles[i].innerHTML = '<span style="font-family:monospace">[-]</span>';
+	}
+}
+// -->
+</script>
+<a name="List of subsystems:">
+<font size="+1" color="#000066">
+<b class="midprod">
+List of subsystems:
+</b>
+
+</font>
+
+</a>
+<br /><br /><b>
+<li>'FlattenHierarchy' turned 'on':</li>
+</b>
+<span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'onList')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span name="onList" id="onList" style="display: none;">
+<ul>
+<li>
+<a href="matlab:coder.internal.code2model('sampleModel61741_pp_47_1_sub:121')" name="code2model" class="code2model">
+cfblk153
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><br /><b>
+<li>'FlattenHierarchy' turned 'off':</li>
+</b>
+<span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'offList')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span name="offList" id="offList" style="display: none;">
+<ul class="SystemdefinedCollapse" id="fc6e9287-dcaa-429a-bf37-5746dbf94e74" dataCollapse="off">
+<li>
+<a href="matlab:coder.internal.code2model('sampleModel61741_pp_47_1_sub:367')" name="code2model" class="code2model">
+cfblk98
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('sampleModel61741_pp_47_1_sub:354')" name="code2model" class="code2model">
+cfblk87
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('sampleModel61741_pp_47_1_sub:351')" name="code2model" class="code2model">
+cfblk87
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('sampleModel61741_pp_47_1_sub:345')" name="code2model" class="code2model">
+cfblk82
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('sampleModel61741_pp_47_1_sub:342')" name="code2model" class="code2model">
+cfblk82
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('sampleModel61741_pp_47_1_sub:337')" name="code2model" class="code2model">
+cfblk81
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('sampleModel61741_pp_47_1_sub:331')" name="code2model" class="code2model">
+cfblk8
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('sampleModel61741_pp_47_1_sub:328')" name="code2model" class="code2model">
+cfblk78
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('sampleModel61741_pp_47_1_sub:325')" name="code2model" class="code2model">
+cfblk78
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('sampleModel61741_pp_47_1_sub:320')" name="code2model" class="code2model">
+cfblk77
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('sampleModel61741_pp_47_1_sub:315')" name="code2model" class="code2model">
+cfblk76
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('sampleModel61741_pp_47_1_sub:314')" name="code2model" class="code2model">
+cfblk75
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('sampleModel61741_pp_47_1_sub:306')" name="code2model" class="code2model">
+cfblk71
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('sampleModel61741_pp_47_1_sub:295')" name="code2model" class="code2model">
+cfblk66
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('sampleModel61741_pp_47_1_sub:292')" name="code2model" class="code2model">
+cfblk66
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('sampleModel61741_pp_47_1_sub:290')" name="code2model" class="code2model">
+cfblk65
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('sampleModel61741_pp_47_1_sub:287')" name="code2model" class="code2model">
+cfblk65
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('sampleModel61741_pp_47_1_sub:282')" name="code2model" class="code2model">
+cfblk64
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('sampleModel61741_pp_47_1_sub:281')" name="code2model" class="code2model">
+cfblk63
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('sampleModel61741_pp_47_1_sub:276')" name="code2model" class="code2model">
+cfblk62
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('sampleModel61741_pp_47_1_sub:269')" name="code2model" class="code2model">
+cfblk60
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('sampleModel61741_pp_47_1_sub:260')" name="code2model" class="code2model">
+cfblk56
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('sampleModel61741_pp_47_1_sub:254')" name="code2model" class="code2model">
+cfblk55
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('sampleModel61741_pp_47_1_sub:245')" name="code2model" class="code2model">
+cfblk51
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('sampleModel61741_pp_47_1_sub:243')" name="code2model" class="code2model">
+cfblk5
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('sampleModel61741_pp_47_1_sub:242')" name="code2model" class="code2model">
+cfblk49
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('sampleModel61741_pp_47_1_sub:237')" name="code2model" class="code2model">
+cfblk48
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('sampleModel61741_pp_47_1_sub:234')" name="code2model" class="code2model">
+cfblk45
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('sampleModel61741_pp_47_1_sub:226')" name="code2model" class="code2model">
+cfblk41
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('sampleModel61741_pp_47_1_sub:224:8')" name="code2model" class="code2model">
+Nonnegative
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('sampleModel61741_pp_47_1_sub:224')" name="code2model" class="code2model">
+cfblk4
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('sampleModel61741_pp_47_1_sub:222')" name="code2model" class="code2model">
+cfblk38
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('sampleModel61741_pp_47_1_sub:218')" name="code2model" class="code2model">
+cfblk34
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('sampleModel61741_pp_47_1_sub:213')" name="code2model" class="code2model">
+cfblk33
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('sampleModel61741_pp_47_1_sub:207')" name="code2model" class="code2model">
+cfblk32
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('sampleModel61741_pp_47_1_sub:204')" name="code2model" class="code2model">
+cfblk3
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('sampleModel61741_pp_47_1_sub:198')" name="code2model" class="code2model">
+cfblk28
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('sampleModel61741_pp_47_1_sub:192')" name="code2model" class="code2model">
+cfblk26
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('sampleModel61741_pp_47_1_sub:185')" name="code2model" class="code2model">
+cfblk23
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('sampleModel61741_pp_47_1_sub:181')" name="code2model" class="code2model">
+cfblk2
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('sampleModel61741_pp_47_1_sub:176')" name="code2model" class="code2model">
+cfblk19
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('sampleModel61741_pp_47_1_sub:169')" name="code2model" class="code2model">
+cfblk177
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('sampleModel61741_pp_47_1_sub:164')" name="code2model" class="code2model">
+cfblk176
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('sampleModel61741_pp_47_1_sub:159')" name="code2model" class="code2model">
+cfblk175
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('sampleModel61741_pp_47_1_sub:152')" name="code2model" class="code2model">
+cfblk172
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('sampleModel61741_pp_47_1_sub:132')" name="code2model" class="code2model">
+cfblk156
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('sampleModel61741_pp_47_1_sub:129')" name="code2model" class="code2model">
+cfblk155
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('sampleModel61741_pp_47_1_sub:125')" name="code2model" class="code2model">
+cfblk154
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('sampleModel61741_pp_47_1_sub:122')" name="code2model" class="code2model">
+cfblk154
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('sampleModel61741_pp_47_1_sub:105')" name="code2model" class="code2model">
+cfblk142
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('sampleModel61741_pp_47_1_sub:104')" name="code2model" class="code2model">
+cfblk141
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('sampleModel61741_pp_47_1_sub:97')" name="code2model" class="code2model">
+cfblk14
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('sampleModel61741_pp_47_1_sub:92')" name="code2model" class="code2model">
+cfblk139
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('sampleModel61741_pp_47_1_sub:84')" name="code2model" class="code2model">
+cfblk135
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('sampleModel61741_pp_47_1_sub:78')" name="code2model" class="code2model">
+cfblk133
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('sampleModel61741_pp_47_1_sub:73')" name="code2model" class="code2model">
+cfblk132
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('sampleModel61741_pp_47_1_sub:67')" name="code2model" class="code2model">
+cfblk130
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('sampleModel61741_pp_47_1_sub:62')" name="code2model" class="code2model">
+cfblk13
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('sampleModel61741_pp_47_1_sub:59')" name="code2model" class="code2model">
+cfblk127
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('sampleModel61741_pp_47_1_sub:58')" name="code2model" class="code2model">
+cfblk126
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('sampleModel61741_pp_47_1_sub:50')" name="code2model" class="code2model">
+cfblk122
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('sampleModel61741_pp_47_1_sub:45')" name="code2model" class="code2model">
+cfblk121
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('sampleModel61741_pp_47_1_sub:39')" name="code2model" class="code2model">
+cfblk12
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('sampleModel61741_pp_47_1_sub:27')" name="code2model" class="code2model">
+cfblk113
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('sampleModel61741_pp_47_1_sub:20')" name="code2model" class="code2model">
+cfblk111
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('sampleModel61741_pp_47_1_sub:7')" name="code2model" class="code2model">
+cfblk103
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('sampleModel61741_pp_47_1_sub:2')" name="code2model" class="code2model">
+cfblk1
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('sampleModel61741_pp_47_1_sub:1')" name="code2model" class="code2model">
+Subsystem
+</a>
+
+</li>
+
+</ul>
+<span class="SDCollapseControl" onmouseover="this.style.cursor = 'pointer'">
+&#8743; 更少
+</span>
+<br />
+</span>
+<br /><br /><a name="Flattening Status:">
+<font size="+1" color="#000066">
+<b class="midprod">
+Flattening Status:
+</b>
+
+</font>
+
+</a>
+<br /><br />'Hierarchical flattening' was successful.<br /><br /><a name="Generated Model">
+<font size="+1" color="#000066">
+<b class="midprod">
+Generated Model
+</b>
+
+</font>
+
+</a>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+Generated model after the transformation
+</td>
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:open_system('E:\zgl\gen_7\slemi\E:\zgl\gen_7\slemi\emi_results\2024-05-23-08-02-25\SampleModel61741\Verilog_hdlsrc\sampleModel61741_pp_47_1_sub\gm_sampleModel61741_pp_47_1_sub')" class="callMATLAB" name="callMATLAB">gm_sampleModel61741_pp_47_1_sub</a>
+</td>
+
+</tr>
+
+</table>
+<br />
+</body>
+
+</html>

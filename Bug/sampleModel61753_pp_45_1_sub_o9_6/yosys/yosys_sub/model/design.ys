@@ -1,0 +1,8 @@
+# running in /doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/yosys/yosys_sub/src/
+read -formal /doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/yosys/Subsystem.v
+read -formal /doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/yosys/Subsystem_yosys.v
+read -formal /doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61753_pp_45_1_sub_o9_6/yosys/top.v
+prep -top top
+hierarchy -smtcheck
+write_jny -no-connections ../model/design.json
+write_rtlil ../model/design.il

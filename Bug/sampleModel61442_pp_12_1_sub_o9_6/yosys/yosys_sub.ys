@@ -1,0 +1,6 @@
+#!/usr/bin/env yosys
+read_verilog /doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/Subsystem_org.v
+hierarchy -top Subsystem
+proc; fsm; opt; memory; opt
+techmap; opt
+write_verilog /doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/Subsystem_yosys.v

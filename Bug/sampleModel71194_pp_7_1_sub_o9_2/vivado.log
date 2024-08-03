@@ -1,0 +1,268 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Thu May 23 06:52:28 2024
+# Process ID: 1443451
+# Current directory: /doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel71194_pp_7_1_sub_o9_2
+# Command line: vivado -mode batch -source /doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel71194_pp_7_1_sub_o9_2/vivado_sim.tcl
+# Log file: /doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel71194_pp_7_1_sub_o9_2/vivado.log
+# Journal file: /doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel71194_pp_7_1_sub_o9_2/vivado.jou
+# Running On: user-System-Product-Name, OS: Linux, CPU Frequency: 5495.188 MHz, CPU Physical cores: 24, Host memory: 134788 MB
+#-----------------------------------------------------------
+source /doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel71194_pp_7_1_sub_o9_2/vivado_sim.tcl
+# create_project -force sim_132 /doc/xzh/vivado_test
+# add_files -norecurse /doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel71194_pp_7_1_sub_o9_2/Subsystem_vivado.v
+# add_files -fileset sim_1 -norecurse /doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel71194_pp_7_1_sub_o9_2/Subsystem_tb.v
+# set_property is_global_include true [get_files /doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel71194_pp_7_1_sub_o9_2/Subsystem_vivado.v]
+# import_files -force -norecurse
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sim_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
+# update_compile_order -fileset sources_1
+# update_compile_order -fileset sim_1
+# set_property top Subsystem_tb [get_filesets sim_1]
+# set_property top_lib xil_defaultlib [get_filesets sim_1]
+# launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'Subsystem_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/doc/xzh/vivado_test/sim_132.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/doc/Xilinx/Vivado/2023.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'Subsystem_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/doc/xzh/vivado_test/sim_132.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj Subsystem_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/doc/xzh/vivado_test/sim_132.srcs/sources_1/imports/sampleModel71194_pp_7_1_sub_o9_2/Subsystem_vivado.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DotProduct_block1
+INFO: [VRFC 10-311] analyzing module Subsystem
+INFO: [VRFC 10-311] analyzing module cfblk11
+INFO: [VRFC 10-311] analyzing module cfblk11_block
+INFO: [VRFC 10-311] analyzing module cfblk130_block
+INFO: [VRFC 10-311] analyzing module cfblk131
+INFO: [VRFC 10-311] analyzing module cfblk136
+INFO: [VRFC 10-311] analyzing module cfblk14
+INFO: [VRFC 10-311] analyzing module cfblk150
+INFO: [VRFC 10-311] analyzing module cfblk153_block
+INFO: [VRFC 10-311] analyzing module cfblk17
+INFO: [VRFC 10-311] analyzing module cfblk174
+INFO: [VRFC 10-311] analyzing module cfblk213
+INFO: [VRFC 10-311] analyzing module cfblk214
+INFO: [VRFC 10-311] analyzing module cfblk216
+INFO: [VRFC 10-311] analyzing module cfblk23
+INFO: [VRFC 10-311] analyzing module cfblk30
+INFO: [VRFC 10-311] analyzing module cfblk46
+INFO: [VRFC 10-311] analyzing module cfblk54
+INFO: [VRFC 10-311] analyzing module cfblk6
+INFO: [VRFC 10-311] analyzing module cfblk63_block
+INFO: [VRFC 10-311] analyzing module cfblk9
+INFO: [VRFC 10-2263] Analyzing Verilog file "/doc/xzh/vivado_test/sim_132.srcs/sim_1/imports/sampleModel71194_pp_7_1_sub_o9_2/Subsystem_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cfblk153_block
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'cfblk153_block' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel71194_pp_7_1_sub_o9_2/cfblk153_block.v:22]
+INFO: [VRFC 10-311] analyzing module cfblk213
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'cfblk213' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel71194_pp_7_1_sub_o9_2/cfblk213.v:22]
+INFO: [VRFC 10-311] analyzing module cfblk71
+INFO: [VRFC 10-311] analyzing module cfblk65
+INFO: [VRFC 10-311] analyzing module cfblk135
+INFO: [VRFC 10-311] analyzing module cfblk174
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'cfblk174' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel71194_pp_7_1_sub_o9_2/cfblk174.v:22]
+INFO: [VRFC 10-311] analyzing module cfblk206
+INFO: [VRFC 10-311] analyzing module DotProduct_block4
+INFO: [VRFC 10-311] analyzing module cfblk46
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'cfblk46' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel71194_pp_7_1_sub_o9_2/cfblk46.v:22]
+INFO: [VRFC 10-311] analyzing module cfblk9
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'cfblk9' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel71194_pp_7_1_sub_o9_2/cfblk9.v:22]
+INFO: [VRFC 10-311] analyzing module cfblk39
+INFO: [VRFC 10-311] analyzing module DotProduct_block
+INFO: [VRFC 10-311] analyzing module cfblk2
+INFO: [VRFC 10-311] analyzing module cfblk103
+INFO: [VRFC 10-311] analyzing module cfblk45
+INFO: [VRFC 10-311] analyzing module cfblk124
+INFO: [VRFC 10-311] analyzing module DotProduct_block3
+INFO: [VRFC 10-311] analyzing module cfblk30
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'cfblk30' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel71194_pp_7_1_sub_o9_2/cfblk30.v:22]
+INFO: [VRFC 10-311] analyzing module cfblk216
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'cfblk216' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel71194_pp_7_1_sub_o9_2/cfblk216.v:22]
+INFO: [VRFC 10-311] analyzing module cfblk14
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'cfblk14' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel71194_pp_7_1_sub_o9_2/cfblk14.v:22]
+INFO: [VRFC 10-311] analyzing module cfblk58
+INFO: [VRFC 10-311] analyzing module cfblk138
+INFO: [VRFC 10-311] analyzing module cfblk133
+INFO: [VRFC 10-311] analyzing module cfblk136
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'cfblk136' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel71194_pp_7_1_sub_o9_2/cfblk136.v:22]
+INFO: [VRFC 10-311] analyzing module cfblk26
+INFO: [VRFC 10-311] analyzing module cfblk27
+INFO: [VRFC 10-311] analyzing module cfblk60
+INFO: [VRFC 10-311] analyzing module cfblk7
+INFO: [VRFC 10-311] analyzing module DotProduct_block2
+INFO: [VRFC 10-311] analyzing module cfblk63_block
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'cfblk63_block' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel71194_pp_7_1_sub_o9_2/cfblk63_block.v:22]
+INFO: [VRFC 10-311] analyzing module cfblk61
+INFO: [VRFC 10-311] analyzing module cfblk220
+INFO: [VRFC 10-311] analyzing module cfblk9_block
+INFO: [VRFC 10-311] analyzing module cfblk2_block
+INFO: [VRFC 10-311] analyzing module cfblk103_block
+INFO: [VRFC 10-311] analyzing module cfblk209
+INFO: [VRFC 10-311] analyzing module cfblk39_block
+INFO: [VRFC 10-311] analyzing module cfblk215
+INFO: [VRFC 10-311] analyzing module Nonpositive
+INFO: [VRFC 10-311] analyzing module cfblk203
+INFO: [VRFC 10-311] analyzing module cfblk1
+INFO: [VRFC 10-311] analyzing module cfblk75_block
+INFO: [VRFC 10-311] analyzing module DotProduct_block1
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'DotProduct_block1' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel71194_pp_7_1_sub_o9_2/DotProduct_block1.v:22]
+INFO: [VRFC 10-311] analyzing module cfblk98
+INFO: [VRFC 10-311] analyzing module cfblk37
+INFO: [VRFC 10-311] analyzing module cfblk75
+INFO: [VRFC 10-311] analyzing module cfblk38
+INFO: [VRFC 10-311] analyzing module cfblk130_block
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'cfblk130_block' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel71194_pp_7_1_sub_o9_2/cfblk130_block.v:22]
+INFO: [VRFC 10-311] analyzing module cfblk19
+INFO: [VRFC 10-311] analyzing module cfblk217
+INFO: [VRFC 10-311] analyzing module cfblk23
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'cfblk23' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel71194_pp_7_1_sub_o9_2/cfblk23.v:22]
+INFO: [VRFC 10-311] analyzing module cfblk17
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'cfblk17' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel71194_pp_7_1_sub_o9_2/cfblk17.v:22]
+INFO: [VRFC 10-311] analyzing module cfblk11_block
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'cfblk11_block' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel71194_pp_7_1_sub_o9_2/cfblk11_block.v:22]
+INFO: [VRFC 10-311] analyzing module cfblk6
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'cfblk6' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel71194_pp_7_1_sub_o9_2/cfblk6.v:22]
+INFO: [VRFC 10-311] analyzing module cfblk127
+INFO: [VRFC 10-311] analyzing module cfblk11
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'cfblk11' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel71194_pp_7_1_sub_o9_2/cfblk11.v:22]
+INFO: [VRFC 10-311] analyzing module cfblk63
+INFO: [VRFC 10-311] analyzing module DotProduct
+INFO: [VRFC 10-311] analyzing module cfblk35
+INFO: [VRFC 10-311] analyzing module cfblk131
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'cfblk131' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel71194_pp_7_1_sub_o9_2/cfblk131.v:22]
+INFO: [VRFC 10-311] analyzing module cfblk161
+INFO: [VRFC 10-311] analyzing module cfblk66
+INFO: [VRFC 10-311] analyzing module cfblk147
+INFO: [VRFC 10-311] analyzing module cfblk10
+INFO: [VRFC 10-311] analyzing module cfblk160
+INFO: [VRFC 10-311] analyzing module cfblk52
+INFO: [VRFC 10-311] analyzing module cfblk219
+INFO: [VRFC 10-311] analyzing module cfblk54
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'cfblk54' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel71194_pp_7_1_sub_o9_2/cfblk54.v:22]
+INFO: [VRFC 10-311] analyzing module cfblk208
+INFO: [VRFC 10-311] analyzing module cfblk153
+INFO: [VRFC 10-311] analyzing module cfblk150
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'cfblk150' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel71194_pp_7_1_sub_o9_2/cfblk150.v:22]
+INFO: [VRFC 10-311] analyzing module cfblk214
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'cfblk214' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel71194_pp_7_1_sub_o9_2/cfblk214.v:22]
+INFO: [VRFC 10-311] analyzing module cfblk93
+INFO: [VRFC 10-311] analyzing module cfblk130
+INFO: [VRFC 10-311] analyzing module cfblk204
+INFO: [VRFC 10-311] analyzing module cfblk95
+INFO: [VRFC 10-311] analyzing module cfblk105
+INFO: [VRFC 10-311] analyzing module Subsystem
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'Subsystem' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel71194_pp_7_1_sub_o9_2/Subsystem.v:119]
+INFO: [VRFC 10-311] analyzing module Subsystem_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/doc/xzh/vivado_test/sim_132.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '0' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/doc/xzh/vivado_test/sim_132.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Subsystem_tb_behav xil_defaultlib.Subsystem_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /doc/Xilinx/Vivado/2023.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Subsystem_tb_behav xil_defaultlib.Subsystem_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.cfblk130
+Compiling module xil_defaultlib.cfblk130_block
+Compiling module xil_defaultlib.cfblk52
+Compiling module xil_defaultlib.cfblk23
+Compiling module xil_defaultlib.cfblk11
+Compiling module xil_defaultlib.cfblk11_block
+Compiling module xil_defaultlib.cfblk7
+Compiling module xil_defaultlib.cfblk136
+Compiling module xil_defaultlib.DotProduct_block3
+Compiling module xil_defaultlib.cfblk60
+Compiling module xil_defaultlib.DotProduct_block2
+Compiling module xil_defaultlib.cfblk39
+Compiling module xil_defaultlib.cfblk39_block
+Compiling module xil_defaultlib.cfblk95
+Compiling module xil_defaultlib.cfblk27
+Compiling module xil_defaultlib.cfblk63
+Compiling module xil_defaultlib.cfblk63_block
+Compiling module xil_defaultlib.cfblk160
+Compiling module xil_defaultlib.DotProduct
+Compiling module xil_defaultlib.cfblk65
+Compiling module xil_defaultlib.cfblk131
+Compiling module xil_defaultlib.cfblk54
+Compiling module xil_defaultlib.DotProduct_block4
+Compiling module xil_defaultlib.cfblk127
+Compiling module xil_defaultlib.cfblk38
+Compiling module xil_defaultlib.cfblk135
+Compiling module xil_defaultlib.cfblk217
+Compiling module xil_defaultlib.DotProduct_block1
+Compiling module xil_defaultlib.cfblk209
+Compiling module xil_defaultlib.cfblk10
+Compiling module xil_defaultlib.cfblk93
+Compiling module xil_defaultlib.cfblk147
+Compiling module xil_defaultlib.cfblk133
+Compiling module xil_defaultlib.cfblk153
+Compiling module xil_defaultlib.cfblk153_block
+Compiling module xil_defaultlib.cfblk213
+Compiling module xil_defaultlib.cfblk6
+Compiling module xil_defaultlib.cfblk214
+Compiling module xil_defaultlib.cfblk220
+Compiling module xil_defaultlib.cfblk37
+Compiling module xil_defaultlib.cfblk9
+Compiling module xil_defaultlib.cfblk150
+Compiling module xil_defaultlib.cfblk216
+Compiling module xil_defaultlib.cfblk204
+Compiling module xil_defaultlib.DotProduct_block
+Compiling module xil_defaultlib.cfblk46
+Compiling module xil_defaultlib.cfblk75
+Compiling module xil_defaultlib.cfblk206
+Compiling module xil_defaultlib.cfblk19
+Compiling module xil_defaultlib.cfblk2
+Compiling module xil_defaultlib.cfblk2_block
+Compiling module xil_defaultlib.cfblk45
+Compiling module xil_defaultlib.cfblk161
+Compiling module xil_defaultlib.cfblk17
+Compiling module xil_defaultlib.cfblk103
+Compiling module xil_defaultlib.cfblk103_block
+Compiling module xil_defaultlib.cfblk124
+Compiling module xil_defaultlib.cfblk30
+Compiling module xil_defaultlib.Nonpositive
+Compiling module xil_defaultlib.cfblk14
+Compiling module xil_defaultlib.cfblk174
+Compiling module xil_defaultlib.cfblk1
+Compiling module xil_defaultlib.Subsystem
+Compiling module xil_defaultlib.Subsystem_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Subsystem_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/doc/xzh/vivado_test/sim_132.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Subsystem_tb_behav -key {Behavioral:sim_1:Functional:Subsystem_tb} -tclbatch {Subsystem_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source Subsystem_tb.tcl
+## current_wave_config
+**************TEST COMPLETED (PASSED)**************
+$stop called at time : 160 ns : File "/doc/xzh/vivado_test/sim_132.srcs/sim_1/imports/sampleModel71194_pp_7_1_sub_o9_2/Subsystem_tb.v" Line 117
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Subsystem_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+# open_vcd /doc/xzh/vivado_test/xsim_dump_1.vcd
+# log_vcd /testbench/*
+WARNING: [Simtcl 6-216] No such HDL Object /testbench/*
+# run 10ns
+**************TEST COMPLETED (PASSED)**************
+**************TEST COMPLETED (PASSED)**************
+# close_vcd
+INFO: [Common 17-206] Exiting Vivado at Thu May 23 06:52:38 2024...

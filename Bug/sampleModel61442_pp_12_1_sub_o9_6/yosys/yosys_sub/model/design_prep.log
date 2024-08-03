@@ -1,0 +1,1113 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.37+1 (git sha1 e1f4c5c9cbb, clang  -fPIC -Os)
+
+
+-- Executing script file `design_prep.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: design.il
+
+2. Executing SCC pass (detecting logic loops).
+Found 0 SCCs in module top.
+Found 0 SCCs in module cfblk97.
+Found 0 SCCs in module cfblk91.
+Found 0 SCCs in module cfblk84.
+Found 0 SCCs in module cfblk81.
+Found 0 SCCs in module cfblk80.
+Found 0 SCCs in module cfblk79.
+Found 0 SCCs in module cfblk78.
+Found 0 SCCs in module cfblk77_block.
+Found 0 SCCs in module cfblk77.
+Found 0 SCCs in module cfblk72.
+Found 0 SCCs in module cfblk71.
+Found 0 SCCs in module cfblk48.
+Found 0 SCCs in module cfblk3_block.
+Found 0 SCCs in module cfblk32.
+Found 0 SCCs in module cfblk31.
+Found 0 SCCs in module cfblk3.
+Found 0 SCCs in module cfblk2_block.
+Found 0 SCCs in module cfblk28_block.
+Found 0 SCCs in module cfblk28.
+Found 0 SCCs in module cfblk21.
+Found 0 SCCs in module cfblk20.
+Found 0 SCCs in module cfblk2.
+Found 0 SCCs in module cfblk1_block.
+Found 0 SCCs in module cfblk192.
+Found 0 SCCs in module cfblk188.
+Found 0 SCCs in module cfblk185.
+Found 0 SCCs in module cfblk184.
+Found 0 SCCs in module cfblk181.
+Found 0 SCCs in module cfblk180.
+Found 0 SCCs in module cfblk168.
+Found 0 SCCs in module cfblk157.
+Found 0 SCCs in module cfblk156.
+Found 0 SCCs in module cfblk153.
+Found 0 SCCs in module cfblk15.
+Found 0 SCCs in module cfblk145.
+Found 0 SCCs in module cfblk144.
+Found 0 SCCs in module cfblk143.
+Found 0 SCCs in module cfblk137.
+Found 0 SCCs in module cfblk134.
+Found 0 SCCs in module cfblk125.
+Found 0 SCCs in module cfblk124.
+Found 0 SCCs in module cfblk121.
+Found 0 SCCs in module cfblk119_block.
+Found 0 SCCs in module cfblk119.
+Found 0 SCCs in module cfblk116.
+Found 0 SCCs in module cfblk110.
+Found 0 SCCs in module cfblk11.
+Found 0 SCCs in module cfblk109.
+Found 0 SCCs in module cfblk108.
+Found 0 SCCs in module cfblk106.
+Found 0 SCCs in module cfblk105.
+Found 0 SCCs in module cfblk100.
+Found 0 SCCs in module cfblk1.
+Found 0 SCCs in module Subsystem_2.
+Found 0 SCCs in module Subsystem_1.
+Found 0 SCCs in module Positive.
+Found 0 SCCs in module DotProduct_block8.
+Found 0 SCCs in module DotProduct_block7.
+Found 0 SCCs in module DotProduct_block6.
+Found 0 SCCs in module DotProduct_block5.
+Found 0 SCCs in module DotProduct_block4.
+Found 0 SCCs in module DotProduct_block3.
+Found 0 SCCs in module DotProduct_block2.
+Found 0 SCCs in module DotProduct_block1.
+Found 0 SCCs in module DotProduct_block.
+Found 0 SCCs in module DotProduct.
+Found 0 SCCs.
+
+3. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+4. Executing MEMORY_NORDFF pass (extracting $dff cells from memories).
+
+5. Executing CLK2FFLOGIC pass (convert clocked FFs to generic $ff cells).
+Replacing top.$procdff$6243 ($dff): CLK=\clk, D=1'1, Q=$formal$/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/yosys/top.v:12$111_EN
+Replacing top.$procdff$6242 ($dff): CLK=\clk, D=$0$formal$/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/yosys/top.v:12$111_CHECK[0:0]$113, Q=$formal$/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/yosys/top.v:12$111_CHECK
+Replacing cfblk97.$procdff$5528 ($adff): CLK=\clk, D=$0\cfblk97_out1_last_value[7:0], Q=\cfblk97_out1_last_value
+Replacing cfblk81.$procdff$5520 ($adff): CLK=\clk, D=$0\cfblk81_out1_last_value[7:0], Q=\cfblk81_out1_last_value
+Replacing cfblk80.$procdff$5485 ($adff): CLK=\clk, D=$0\cfblk80_out1_last_value[7:0], Q=\cfblk80_out1_last_value
+Replacing cfblk79.$procdff$5495 ($adff): CLK=\clk, D=$0\cfblk79_out1_last_value[7:0], Q=\cfblk79_out1_last_value
+Replacing cfblk78.$procdff$5496 ($adff): CLK=\clk, D=$0\cfblk78_out1_last_value[7:0], Q=\cfblk78_out1_last_value
+Replacing cfblk77_block.$procdff$5521 ($adff): CLK=\clk, D=$0\cfblk77_out1_last_value[7:0], Q=\cfblk77_out1_last_value
+Replacing cfblk72.$procdff$5490 ($adff): CLK=\clk, D=$0\cfblk72_out1_last_value[7:0], Q=\cfblk72_out1_last_value
+Replacing cfblk71.$procdff$5500 ($adff): CLK=\clk, D=$0\cfblk71_out1_last_value[7:0], Q=\cfblk71_out1_last_value
+Replacing cfblk48.$procdff$5523 ($adff): CLK=\clk, D=$0\cfblk48_out1_last_value[7:0], Q=\cfblk48_out1_last_value
+Replacing cfblk3_block.$procdff$5525 ($adff): CLK=\clk, D=$0\cfblk3_out1_last_value[7:0], Q=\cfblk3_out1_last_value
+Replacing cfblk31.$procdff$5498 ($adff): CLK=\clk, D=$0\cfblk31_out1_last_value[15:0], Q=\cfblk31_out1_last_value
+Replacing cfblk3.$procdff$5482 ($adff): CLK=\clk, D=$0\U_k_1[7:0], Q=\U_k_1
+Replacing cfblk2_block.$procdff$5486 ($adff): CLK=\clk, D=$0\cfblk2_out1_last_value[7:0], Q=\cfblk2_out1_last_value
+Replacing cfblk28_block.$procdff$5497 ($adff): CLK=\clk, D=$0\cfblk28_out1_last_value[7:0], Q=\cfblk28_out1_last_value
+Replacing cfblk21.$procdff$5518 ($adff): CLK=\clk, D=$0\cfblk21_out1_last_value[7:0], Q=\cfblk21_out1_last_value
+Replacing cfblk20.$procdff$5488 ($adff): CLK=\clk, D=$0\cfblk20_out1_last_value[7:0], Q=\cfblk20_out1_last_value
+Replacing cfblk2.$procdff$5483 ($adff): CLK=\clk, D=$0\U_k_1[0:0], Q=\U_k_1
+Replacing cfblk1_block.$procdff$5529 ($adff): CLK=\clk, D=$0\cfblk1_out1_last_value[7:0], Q=\cfblk1_out1_last_value
+Replacing cfblk192.$procdff$5501 ($adff): CLK=\clk, D=$0\cfblk192_out1_last_value[7:0], Q=\cfblk192_out1_last_value
+Replacing cfblk188.$procdff$5499 ($adff): CLK=\clk, D=$0\cfblk188_out1_last_value[7:0], Q=\cfblk188_out1_last_value
+Replacing cfblk185.$procdff$5527 ($adff): CLK=\clk, D=$0\cfblk185_out1_last_value[7:0], Q=\cfblk185_out1_last_value
+Replacing cfblk184.$procdff$5494 ($adff): CLK=\clk, D=$0\cfblk184_out1_last_value[7:0], Q=\cfblk184_out1_last_value
+Replacing cfblk181.$procdff$5492 ($adff): CLK=\clk, D=$0\cfblk181_out1_last_value[7:0], Q=\cfblk181_out1_last_value
+Replacing cfblk180.$procdff$5493 ($adff): CLK=\clk, D=$0\cfblk180_out1_last_value[7:0], Q=\cfblk180_out1_last_value
+Replacing cfblk168.$procdff$5510 ($adff): CLK=\clk, D=$0\cfblk168_reg[1][7:0], Q=\cfblk168_reg[1]
+Replacing cfblk168.$procdff$5509 ($adff): CLK=\clk, D=$0\cfblk168_reg[0][7:0], Q=\cfblk168_reg[0]
+Replacing cfblk168.$procdff$5504 ($adff): CLK=\clk, D=$0\cfblk168_out1_last_value[7:0], Q=\cfblk168_out1_last_value
+Replacing cfblk15.$procdff$5522 ($adff): CLK=\clk, D=$0\cfblk15_out1_last_value[7:0], Q=\cfblk15_out1_last_value
+Replacing cfblk144.$procdff$5491 ($adff): CLK=\clk, D=$0\cfblk144_out1_last_value[7:0], Q=\cfblk144_out1_last_value
+Replacing cfblk137.$procdff$5513 ($adff): CLK=\clk, D=$0\cfblk137_out1_last_value[7:0], Q=\cfblk137_out1_last_value
+Replacing cfblk134.$procdff$5511 ($adff): CLK=\clk, D=$0\cfblk134_out1_last_value[7:0], Q=\cfblk134_out1_last_value
+Replacing cfblk125.$procdff$5512 ($adff): CLK=\clk, D=$0\cfblk125_out1_last_value[7:0], Q=\cfblk125_out1_last_value
+Replacing cfblk121.$procdff$5503 ($adff): CLK=\clk, D=$0\cfblk121_out1_last_value[7:0], Q=\cfblk121_out1_last_value
+Replacing cfblk121.$procdff$5502 ($adff): CLK=\clk, D=$0\cfblk121_out2_last_value[7:0], Q=\cfblk121_out2_last_value
+Replacing cfblk119_block.$procdff$5526 ($adff): CLK=\clk, D=$0\cfblk119_out1_last_value[7:0], Q=\cfblk119_out1_last_value
+Replacing cfblk116.$procdff$5516 ($adff): CLK=\clk, D=$0\cfblk116_out1_last_value[7:0], Q=\cfblk116_out1_last_value
+Replacing cfblk110.$procdff$5519 ($adff): CLK=\clk, D=$0\cfblk110_out1_last_value[15:0], Q=\cfblk110_out1_last_value
+Replacing cfblk11.$procdff$5489 ($adff): CLK=\clk, D=$0\cfblk11_out1_last_value[7:0], Q=\cfblk11_out1_last_value
+Replacing cfblk109.$procdff$5515 ($adff): CLK=\clk, D=$0\cfblk109_out1_last_value[7:0], Q=\cfblk109_out1_last_value
+Replacing cfblk109.$procdff$5514 ($adff): CLK=\clk, D=$0\cfblk109_out2_last_value[7:0], Q=\cfblk109_out2_last_value
+Replacing cfblk108.$procdff$5524 ($adff): CLK=\clk, D=$0\cfblk108_out1_last_value[7:0], Q=\cfblk108_out1_last_value
+Replacing cfblk105.$procdff$5517 ($adff): CLK=\clk, D=$0\cfblk105_out1_last_value[7:0], Q=\cfblk105_out1_last_value
+Replacing cfblk100.$procdff$5487 ($adff): CLK=\clk, D=$0\cfblk100_out1_last_value[7:0], Q=\cfblk100_out1_last_value
+Replacing cfblk1.$procdff$5484 ($adff): CLK=\clk, D=$0\U_k_1[7:0], Q=\U_k_1
+Replacing Subsystem_2.$procdff$6241 ($adff): CLK=\clk, D=$0\cfblk170_reg[1][0:0], Q=\cfblk170_reg[1] [0]
+Replacing Subsystem_2.$procdff$6240 ($adff): CLK=\clk, D=$0\cfblk170_reg[1][1:1], Q=\cfblk170_reg[1] [1]
+Replacing Subsystem_2.$procdff$6239 ($adff): CLK=\clk, D=$0\cfblk170_reg[1][2:2], Q=\cfblk170_reg[1] [2]
+Replacing Subsystem_2.$procdff$6238 ($adff): CLK=\clk, D=$0\cfblk170_reg[1][3:3], Q=\cfblk170_reg[1] [3]
+Replacing Subsystem_2.$procdff$6237 ($adff): CLK=\clk, D=$0\cfblk170_reg[1][4:4], Q=\cfblk170_reg[1] [4]
+Replacing Subsystem_2.$procdff$6236 ($adff): CLK=\clk, D=$0\cfblk170_reg[1][5:5], Q=\cfblk170_reg[1] [5]
+Replacing Subsystem_2.$procdff$6235 ($adff): CLK=\clk, D=$0\cfblk170_reg[1][6:6], Q=\cfblk170_reg[1] [6]
+Replacing Subsystem_2.$procdff$6234 ($adff): CLK=\clk, D=$0\cfblk170_reg[1][7:7], Q=\cfblk170_reg[1] [7]
+Replacing Subsystem_2.$procdff$6233 ($adff): CLK=\clk, D=$0\cfblk167_reg[0][0:0], Q=\cfblk167_reg[0] [0]
+Replacing Subsystem_2.$procdff$6232 ($adff): CLK=\clk, D=$0\cfblk167_reg[0][1:1], Q=\cfblk167_reg[0] [1]
+Replacing Subsystem_2.$procdff$6231 ($adff): CLK=\clk, D=$0\cfblk167_reg[0][2:2], Q=\cfblk167_reg[0] [2]
+Replacing Subsystem_2.$procdff$6230 ($adff): CLK=\clk, D=$0\cfblk167_reg[0][3:3], Q=\cfblk167_reg[0] [3]
+Replacing Subsystem_2.$procdff$6229 ($adff): CLK=\clk, D=$0\cfblk167_reg[0][4:4], Q=\cfblk167_reg[0] [4]
+Replacing Subsystem_2.$procdff$6228 ($adff): CLK=\clk, D=$0\cfblk167_reg[0][5:5], Q=\cfblk167_reg[0] [5]
+Replacing Subsystem_2.$procdff$6227 ($adff): CLK=\clk, D=$0\cfblk167_reg[0][6:6], Q=\cfblk167_reg[0] [6]
+Replacing Subsystem_2.$procdff$6226 ($adff): CLK=\clk, D=$0\cfblk167_reg[0][7:7], Q=\cfblk167_reg[0] [7]
+Replacing Subsystem_2.$procdff$6225 ($adff): CLK=\clk, D=$0\cfblk167_reg[1][0:0], Q=\cfblk167_reg[1] [0]
+Replacing Subsystem_2.$procdff$6224 ($adff): CLK=\clk, D=$0\cfblk167_reg[1][1:1], Q=\cfblk167_reg[1] [1]
+Replacing Subsystem_2.$procdff$6223 ($adff): CLK=\clk, D=$0\cfblk167_reg[1][2:2], Q=\cfblk167_reg[1] [2]
+Replacing Subsystem_2.$procdff$6222 ($adff): CLK=\clk, D=$0\cfblk167_reg[1][3:3], Q=\cfblk167_reg[1] [3]
+Replacing Subsystem_2.$procdff$6221 ($adff): CLK=\clk, D=$0\cfblk167_reg[1][4:4], Q=\cfblk167_reg[1] [4]
+Replacing Subsystem_2.$procdff$6220 ($adff): CLK=\clk, D=$0\cfblk167_reg[1][5:5], Q=\cfblk167_reg[1] [5]
+Replacing Subsystem_2.$procdff$6219 ($adff): CLK=\clk, D=$0\cfblk167_reg[1][6:6], Q=\cfblk167_reg[1] [6]
+Replacing Subsystem_2.$procdff$6218 ($adff): CLK=\clk, D=$0\cfblk167_reg[1][7:7], Q=\cfblk167_reg[1] [7]
+Replacing Subsystem_2.$procdff$6217 ($adff): CLK=\clk, D=$0\cfblk164_reg[0][0:0], Q=\cfblk164_reg[0] [0]
+Replacing Subsystem_2.$procdff$6216 ($adff): CLK=\clk, D=$0\cfblk164_reg[0][1:1], Q=\cfblk164_reg[0] [1]
+Replacing Subsystem_2.$procdff$6215 ($adff): CLK=\clk, D=$0\cfblk164_reg[0][2:2], Q=\cfblk164_reg[0] [2]
+Replacing Subsystem_2.$procdff$6214 ($adff): CLK=\clk, D=$0\cfblk164_reg[0][3:3], Q=\cfblk164_reg[0] [3]
+Replacing Subsystem_2.$procdff$6213 ($adff): CLK=\clk, D=$0\cfblk164_reg[0][4:4], Q=\cfblk164_reg[0] [4]
+Replacing Subsystem_2.$procdff$6212 ($adff): CLK=\clk, D=$0\cfblk164_reg[0][5:5], Q=\cfblk164_reg[0] [5]
+Replacing Subsystem_2.$procdff$6211 ($adff): CLK=\clk, D=$0\cfblk164_reg[0][6:6], Q=\cfblk164_reg[0] [6]
+Replacing Subsystem_2.$procdff$6210 ($adff): CLK=\clk, D=$0\cfblk164_reg[0][7:7], Q=\cfblk164_reg[0] [7]
+Replacing Subsystem_2.$procdff$6209 ($adff): CLK=\clk, D=$0\cfblk164_reg[1][0:0], Q=\cfblk164_reg[1] [0]
+Replacing Subsystem_2.$procdff$6208 ($adff): CLK=\clk, D=$0\cfblk164_reg[1][1:1], Q=\cfblk164_reg[1] [1]
+Replacing Subsystem_2.$procdff$6207 ($adff): CLK=\clk, D=$0\cfblk164_reg[1][2:2], Q=\cfblk164_reg[1] [2]
+Replacing Subsystem_2.$procdff$6206 ($adff): CLK=\clk, D=$0\cfblk164_reg[1][3:3], Q=\cfblk164_reg[1] [3]
+Replacing Subsystem_2.$procdff$6205 ($adff): CLK=\clk, D=$0\cfblk164_reg[1][4:4], Q=\cfblk164_reg[1] [4]
+Replacing Subsystem_2.$procdff$6204 ($adff): CLK=\clk, D=$0\cfblk164_reg[1][5:5], Q=\cfblk164_reg[1] [5]
+Replacing Subsystem_2.$procdff$6203 ($adff): CLK=\clk, D=$0\cfblk164_reg[1][6:6], Q=\cfblk164_reg[1] [6]
+Replacing Subsystem_2.$procdff$6202 ($adff): CLK=\clk, D=$0\cfblk164_reg[1][7:7], Q=\cfblk164_reg[1] [7]
+Replacing Subsystem_2.$procdff$6201 ($adff): CLK=\clk, D=$0\cfblk176_reg[0][0:0], Q=\cfblk176_reg[0] [0]
+Replacing Subsystem_2.$procdff$6200 ($adff): CLK=\clk, D=$0\cfblk176_reg[0][1:1], Q=\cfblk176_reg[0] [1]
+Replacing Subsystem_2.$procdff$6199 ($adff): CLK=\clk, D=$0\cfblk176_reg[0][2:2], Q=\cfblk176_reg[0] [2]
+Replacing Subsystem_2.$procdff$6198 ($adff): CLK=\clk, D=$0\cfblk176_reg[0][3:3], Q=\cfblk176_reg[0] [3]
+Replacing Subsystem_2.$procdff$6197 ($adff): CLK=\clk, D=$0\cfblk176_reg[0][4:4], Q=\cfblk176_reg[0] [4]
+Replacing Subsystem_2.$procdff$6196 ($adff): CLK=\clk, D=$0\cfblk176_reg[0][5:5], Q=\cfblk176_reg[0] [5]
+Replacing Subsystem_2.$procdff$6195 ($adff): CLK=\clk, D=$0\cfblk176_reg[0][6:6], Q=\cfblk176_reg[0] [6]
+Replacing Subsystem_2.$procdff$6194 ($adff): CLK=\clk, D=$0\cfblk176_reg[0][7:7], Q=\cfblk176_reg[0] [7]
+Replacing Subsystem_2.$procdff$6193 ($adff): CLK=\clk, D=$0\cfblk176_reg[1][0:0], Q=\cfblk176_reg[1] [0]
+Replacing Subsystem_2.$procdff$6192 ($adff): CLK=\clk, D=$0\cfblk176_reg[1][1:1], Q=\cfblk176_reg[1] [1]
+Replacing Subsystem_2.$procdff$6191 ($adff): CLK=\clk, D=$0\cfblk176_reg[1][2:2], Q=\cfblk176_reg[1] [2]
+Replacing Subsystem_2.$procdff$6190 ($adff): CLK=\clk, D=$0\cfblk176_reg[1][3:3], Q=\cfblk176_reg[1] [3]
+Replacing Subsystem_2.$procdff$6189 ($adff): CLK=\clk, D=$0\cfblk176_reg[1][4:4], Q=\cfblk176_reg[1] [4]
+Replacing Subsystem_2.$procdff$6188 ($adff): CLK=\clk, D=$0\cfblk176_reg[1][5:5], Q=\cfblk176_reg[1] [5]
+Replacing Subsystem_2.$procdff$6187 ($adff): CLK=\clk, D=$0\cfblk176_reg[1][6:6], Q=\cfblk176_reg[1] [6]
+Replacing Subsystem_2.$procdff$6186 ($adff): CLK=\clk, D=$0\cfblk176_reg[1][7:7], Q=\cfblk176_reg[1] [7]
+Replacing Subsystem_2.$procdff$6185 ($adff): CLK=\clk, D=$0\cfblk162_reg[0][0:0], Q=\cfblk162_reg[0] [0]
+Replacing Subsystem_2.$procdff$6184 ($adff): CLK=\clk, D=$0\cfblk162_reg[0][1:1], Q=\cfblk162_reg[0] [1]
+Replacing Subsystem_2.$procdff$6183 ($adff): CLK=\clk, D=$0\cfblk162_reg[0][2:2], Q=\cfblk162_reg[0] [2]
+Replacing Subsystem_2.$procdff$6182 ($adff): CLK=\clk, D=$0\cfblk162_reg[0][3:3], Q=\cfblk162_reg[0] [3]
+Replacing Subsystem_2.$procdff$6181 ($adff): CLK=\clk, D=$0\cfblk162_reg[0][4:4], Q=\cfblk162_reg[0] [4]
+Replacing Subsystem_2.$procdff$6180 ($adff): CLK=\clk, D=$0\cfblk162_reg[0][5:5], Q=\cfblk162_reg[0] [5]
+Replacing Subsystem_2.$procdff$6179 ($adff): CLK=\clk, D=$0\cfblk162_reg[0][6:6], Q=\cfblk162_reg[0] [6]
+Replacing Subsystem_2.$procdff$6178 ($adff): CLK=\clk, D=$0\cfblk162_reg[0][7:7], Q=\cfblk162_reg[0] [7]
+Replacing Subsystem_2.$procdff$6177 ($adff): CLK=\clk, D=$0\cfblk162_reg[1][0:0], Q=\cfblk162_reg[1] [0]
+Replacing Subsystem_2.$procdff$6176 ($adff): CLK=\clk, D=$0\cfblk162_reg[1][1:1], Q=\cfblk162_reg[1] [1]
+Replacing Subsystem_2.$procdff$6175 ($adff): CLK=\clk, D=$0\cfblk162_reg[1][2:2], Q=\cfblk162_reg[1] [2]
+Replacing Subsystem_2.$procdff$6174 ($adff): CLK=\clk, D=$0\cfblk162_reg[1][3:3], Q=\cfblk162_reg[1] [3]
+Replacing Subsystem_2.$procdff$6173 ($adff): CLK=\clk, D=$0\cfblk162_reg[1][4:4], Q=\cfblk162_reg[1] [4]
+Replacing Subsystem_2.$procdff$6172 ($adff): CLK=\clk, D=$0\cfblk162_reg[1][5:5], Q=\cfblk162_reg[1] [5]
+Replacing Subsystem_2.$procdff$6171 ($adff): CLK=\clk, D=$0\cfblk162_reg[1][6:6], Q=\cfblk162_reg[1] [6]
+Replacing Subsystem_2.$procdff$6170 ($adff): CLK=\clk, D=$0\cfblk162_reg[1][7:7], Q=\cfblk162_reg[1] [7]
+Replacing Subsystem_2.$procdff$6169 ($adff): CLK=\clk, D=$0\cfblk161_reg[0][0:0], Q=\cfblk161_reg[0] [0]
+Replacing Subsystem_2.$procdff$6168 ($adff): CLK=\clk, D=$0\cfblk161_reg[0][1:1], Q=\cfblk161_reg[0] [1]
+Replacing Subsystem_2.$procdff$6167 ($adff): CLK=\clk, D=$0\cfblk161_reg[0][2:2], Q=\cfblk161_reg[0] [2]
+Replacing Subsystem_2.$procdff$6166 ($adff): CLK=\clk, D=$0\cfblk161_reg[0][3:3], Q=\cfblk161_reg[0] [3]
+Replacing Subsystem_2.$procdff$6165 ($adff): CLK=\clk, D=$0\cfblk161_reg[0][4:4], Q=\cfblk161_reg[0] [4]
+Replacing Subsystem_2.$procdff$6164 ($adff): CLK=\clk, D=$0\cfblk161_reg[0][5:5], Q=\cfblk161_reg[0] [5]
+Replacing Subsystem_2.$procdff$6163 ($adff): CLK=\clk, D=$0\cfblk161_reg[0][6:6], Q=\cfblk161_reg[0] [6]
+Replacing Subsystem_2.$procdff$6162 ($adff): CLK=\clk, D=$0\cfblk161_reg[0][7:7], Q=\cfblk161_reg[0] [7]
+Replacing Subsystem_2.$procdff$6161 ($adff): CLK=\clk, D=$0\cfblk161_reg[1][0:0], Q=\cfblk161_reg[1] [0]
+Replacing Subsystem_2.$procdff$6160 ($adff): CLK=\clk, D=$0\cfblk161_reg[1][1:1], Q=\cfblk161_reg[1] [1]
+Replacing Subsystem_2.$procdff$6159 ($adff): CLK=\clk, D=$0\cfblk161_reg[1][2:2], Q=\cfblk161_reg[1] [2]
+Replacing Subsystem_2.$procdff$6158 ($adff): CLK=\clk, D=$0\cfblk161_reg[1][3:3], Q=\cfblk161_reg[1] [3]
+Replacing Subsystem_2.$procdff$6157 ($adff): CLK=\clk, D=$0\cfblk161_reg[1][4:4], Q=\cfblk161_reg[1] [4]
+Replacing Subsystem_2.$procdff$6156 ($adff): CLK=\clk, D=$0\cfblk161_reg[1][5:5], Q=\cfblk161_reg[1] [5]
+Replacing Subsystem_2.$procdff$6155 ($adff): CLK=\clk, D=$0\cfblk161_reg[1][6:6], Q=\cfblk161_reg[1] [6]
+Replacing Subsystem_2.$procdff$6154 ($adff): CLK=\clk, D=$0\cfblk161_reg[1][7:7], Q=\cfblk161_reg[1] [7]
+Replacing Subsystem_2.$procdff$6153 ($adff): CLK=\clk, D=$0\cfblk171_reg[0][0:0], Q=\cfblk171_reg[0] [0]
+Replacing Subsystem_2.$procdff$6152 ($adff): CLK=\clk, D=$0\cfblk171_reg[0][1:1], Q=\cfblk171_reg[0] [1]
+Replacing Subsystem_2.$procdff$6151 ($adff): CLK=\clk, D=$0\cfblk171_reg[0][2:2], Q=\cfblk171_reg[0] [2]
+Replacing Subsystem_2.$procdff$6150 ($adff): CLK=\clk, D=$0\cfblk171_reg[0][3:3], Q=\cfblk171_reg[0] [3]
+Replacing Subsystem_2.$procdff$6149 ($adff): CLK=\clk, D=$0\cfblk171_reg[0][4:4], Q=\cfblk171_reg[0] [4]
+Replacing Subsystem_2.$procdff$6148 ($adff): CLK=\clk, D=$0\cfblk171_reg[0][5:5], Q=\cfblk171_reg[0] [5]
+Replacing Subsystem_2.$procdff$6147 ($adff): CLK=\clk, D=$0\cfblk171_reg[0][6:6], Q=\cfblk171_reg[0] [6]
+Replacing Subsystem_2.$procdff$6146 ($adff): CLK=\clk, D=$0\cfblk171_reg[0][7:7], Q=\cfblk171_reg[0] [7]
+Replacing Subsystem_2.$procdff$6145 ($adff): CLK=\clk, D=$0\cfblk171_reg[1][0:0], Q=\cfblk171_reg[1] [0]
+Replacing Subsystem_2.$procdff$6144 ($adff): CLK=\clk, D=$0\cfblk171_reg[1][1:1], Q=\cfblk171_reg[1] [1]
+Replacing Subsystem_2.$procdff$6143 ($adff): CLK=\clk, D=$0\cfblk171_reg[1][2:2], Q=\cfblk171_reg[1] [2]
+Replacing Subsystem_2.$procdff$6142 ($adff): CLK=\clk, D=$0\cfblk171_reg[1][3:3], Q=\cfblk171_reg[1] [3]
+Replacing Subsystem_2.$procdff$6141 ($adff): CLK=\clk, D=$0\cfblk171_reg[1][4:4], Q=\cfblk171_reg[1] [4]
+Replacing Subsystem_2.$procdff$6140 ($adff): CLK=\clk, D=$0\cfblk171_reg[1][5:5], Q=\cfblk171_reg[1] [5]
+Replacing Subsystem_2.$procdff$6139 ($adff): CLK=\clk, D=$0\cfblk171_reg[1][6:6], Q=\cfblk171_reg[1] [6]
+Replacing Subsystem_2.$procdff$6138 ($adff): CLK=\clk, D=$0\cfblk171_reg[1][7:7], Q=\cfblk171_reg[1] [7]
+Replacing Subsystem_2.$procdff$6137 ($adff): CLK=\clk, D=$0\cfblk169_reg[0][0:0], Q=\cfblk169_reg[0] [0]
+Replacing Subsystem_2.$procdff$6136 ($adff): CLK=\clk, D=$0\cfblk169_reg[0][1:1], Q=\cfblk169_reg[0] [1]
+Replacing Subsystem_2.$procdff$6135 ($adff): CLK=\clk, D=$0\cfblk169_reg[0][2:2], Q=\cfblk169_reg[0] [2]
+Replacing Subsystem_2.$procdff$6134 ($adff): CLK=\clk, D=$0\cfblk169_reg[0][3:3], Q=\cfblk169_reg[0] [3]
+Replacing Subsystem_2.$procdff$6133 ($adff): CLK=\clk, D=$0\cfblk169_reg[0][4:4], Q=\cfblk169_reg[0] [4]
+Replacing Subsystem_2.$procdff$6132 ($adff): CLK=\clk, D=$0\cfblk169_reg[0][5:5], Q=\cfblk169_reg[0] [5]
+Replacing Subsystem_2.$procdff$6131 ($adff): CLK=\clk, D=$0\cfblk169_reg[0][6:6], Q=\cfblk169_reg[0] [6]
+Replacing Subsystem_2.$procdff$6130 ($adff): CLK=\clk, D=$0\cfblk169_reg[0][7:7], Q=\cfblk169_reg[0] [7]
+Replacing Subsystem_2.$procdff$6129 ($adff): CLK=\clk, D=$0\cfblk169_reg[1][0:0], Q=\cfblk169_reg[1] [0]
+Replacing Subsystem_2.$procdff$6128 ($adff): CLK=\clk, D=$0\cfblk169_reg[1][1:1], Q=\cfblk169_reg[1] [1]
+Replacing Subsystem_2.$procdff$6127 ($adff): CLK=\clk, D=$0\cfblk169_reg[1][2:2], Q=\cfblk169_reg[1] [2]
+Replacing Subsystem_2.$procdff$6126 ($adff): CLK=\clk, D=$0\cfblk169_reg[1][3:3], Q=\cfblk169_reg[1] [3]
+Replacing Subsystem_2.$procdff$6125 ($adff): CLK=\clk, D=$0\cfblk169_reg[1][4:4], Q=\cfblk169_reg[1] [4]
+Replacing Subsystem_2.$procdff$6124 ($adff): CLK=\clk, D=$0\cfblk169_reg[1][5:5], Q=\cfblk169_reg[1] [5]
+Replacing Subsystem_2.$procdff$6123 ($adff): CLK=\clk, D=$0\cfblk169_reg[1][6:6], Q=\cfblk169_reg[1] [6]
+Replacing Subsystem_2.$procdff$6122 ($adff): CLK=\clk, D=$0\cfblk169_reg[1][7:7], Q=\cfblk169_reg[1] [7]
+Replacing Subsystem_2.$procdff$6121 ($adff): CLK=\clk, D=$0\cfblk159_reg[0][0:0], Q=\cfblk159_reg[0] [0]
+Replacing Subsystem_2.$procdff$6120 ($adff): CLK=\clk, D=$0\cfblk159_reg[0][1:1], Q=\cfblk159_reg[0] [1]
+Replacing Subsystem_2.$procdff$6119 ($adff): CLK=\clk, D=$0\cfblk159_reg[0][2:2], Q=\cfblk159_reg[0] [2]
+Replacing Subsystem_2.$procdff$6118 ($adff): CLK=\clk, D=$0\cfblk159_reg[0][3:3], Q=\cfblk159_reg[0] [3]
+Replacing Subsystem_2.$procdff$6117 ($adff): CLK=\clk, D=$0\cfblk159_reg[0][4:4], Q=\cfblk159_reg[0] [4]
+Replacing Subsystem_2.$procdff$6116 ($adff): CLK=\clk, D=$0\cfblk159_reg[0][5:5], Q=\cfblk159_reg[0] [5]
+Replacing Subsystem_2.$procdff$6115 ($adff): CLK=\clk, D=$0\cfblk159_reg[0][6:6], Q=\cfblk159_reg[0] [6]
+Replacing Subsystem_2.$procdff$6114 ($adff): CLK=\clk, D=$0\cfblk159_reg[0][7:7], Q=\cfblk159_reg[0] [7]
+Replacing Subsystem_2.$procdff$6113 ($adff): CLK=\clk, D=$0\cfblk159_reg[1][0:0], Q=\cfblk159_reg[1] [0]
+Replacing Subsystem_2.$procdff$6112 ($adff): CLK=\clk, D=$0\cfblk159_reg[1][1:1], Q=\cfblk159_reg[1] [1]
+Replacing Subsystem_2.$procdff$6111 ($adff): CLK=\clk, D=$0\cfblk159_reg[1][2:2], Q=\cfblk159_reg[1] [2]
+Replacing Subsystem_2.$procdff$6110 ($adff): CLK=\clk, D=$0\cfblk159_reg[1][3:3], Q=\cfblk159_reg[1] [3]
+Replacing Subsystem_2.$procdff$6109 ($adff): CLK=\clk, D=$0\cfblk159_reg[1][4:4], Q=\cfblk159_reg[1] [4]
+Replacing Subsystem_2.$procdff$6108 ($adff): CLK=\clk, D=$0\cfblk159_reg[1][5:5], Q=\cfblk159_reg[1] [5]
+Replacing Subsystem_2.$procdff$6107 ($adff): CLK=\clk, D=$0\cfblk159_reg[1][6:6], Q=\cfblk159_reg[1] [6]
+Replacing Subsystem_2.$procdff$6106 ($adff): CLK=\clk, D=$0\cfblk159_reg[1][7:7], Q=\cfblk159_reg[1] [7]
+Replacing Subsystem_2.$procdff$6105 ($adff): CLK=\clk, D=$0\emi_137_reg[0][0:0], Q=\emi_137_reg[0] [0]
+Replacing Subsystem_2.$procdff$6104 ($adff): CLK=\clk, D=$0\emi_137_reg[0][1:1], Q=\emi_137_reg[0] [1]
+Replacing Subsystem_2.$procdff$6103 ($adff): CLK=\clk, D=$0\emi_137_reg[0][2:2], Q=\emi_137_reg[0] [2]
+Replacing Subsystem_2.$procdff$6102 ($adff): CLK=\clk, D=$0\emi_137_reg[0][3:3], Q=\emi_137_reg[0] [3]
+Replacing Subsystem_2.$procdff$6101 ($adff): CLK=\clk, D=$0\emi_137_reg[0][4:4], Q=\emi_137_reg[0] [4]
+Replacing Subsystem_2.$procdff$6100 ($adff): CLK=\clk, D=$0\emi_137_reg[0][5:5], Q=\emi_137_reg[0] [5]
+Replacing Subsystem_2.$procdff$6099 ($adff): CLK=\clk, D=$0\emi_137_reg[0][6:6], Q=\emi_137_reg[0] [6]
+Replacing Subsystem_2.$procdff$6098 ($adff): CLK=\clk, D=$0\emi_137_reg[0][7:7], Q=\emi_137_reg[0] [7]
+Replacing Subsystem_2.$procdff$6097 ($adff): CLK=\clk, D=$0\emi_137_reg[1][0:0], Q=\emi_137_reg[1] [0]
+Replacing Subsystem_2.$procdff$6096 ($adff): CLK=\clk, D=$0\emi_137_reg[1][1:1], Q=\emi_137_reg[1] [1]
+Replacing Subsystem_2.$procdff$6095 ($adff): CLK=\clk, D=$0\emi_137_reg[1][2:2], Q=\emi_137_reg[1] [2]
+Replacing Subsystem_2.$procdff$6094 ($adff): CLK=\clk, D=$0\emi_137_reg[1][3:3], Q=\emi_137_reg[1] [3]
+Replacing Subsystem_2.$procdff$6093 ($adff): CLK=\clk, D=$0\emi_137_reg[1][4:4], Q=\emi_137_reg[1] [4]
+Replacing Subsystem_2.$procdff$6092 ($adff): CLK=\clk, D=$0\emi_137_reg[1][5:5], Q=\emi_137_reg[1] [5]
+Replacing Subsystem_2.$procdff$6091 ($adff): CLK=\clk, D=$0\emi_137_reg[1][6:6], Q=\emi_137_reg[1] [6]
+Replacing Subsystem_2.$procdff$6090 ($adff): CLK=\clk, D=$0\emi_137_reg[1][7:7], Q=\emi_137_reg[1] [7]
+Replacing Subsystem_2.$procdff$6089 ($adff): CLK=\clk, D=$0\cfblk158_reg[0][0:0], Q=\cfblk158_reg[0] [0]
+Replacing Subsystem_2.$procdff$6088 ($adff): CLK=\clk, D=$0\cfblk158_reg[0][1:1], Q=\cfblk158_reg[0] [1]
+Replacing Subsystem_2.$procdff$6087 ($adff): CLK=\clk, D=$0\cfblk158_reg[0][2:2], Q=\cfblk158_reg[0] [2]
+Replacing Subsystem_2.$procdff$6086 ($adff): CLK=\clk, D=$0\cfblk158_reg[0][3:3], Q=\cfblk158_reg[0] [3]
+Replacing Subsystem_2.$procdff$6085 ($adff): CLK=\clk, D=$0\cfblk158_reg[0][4:4], Q=\cfblk158_reg[0] [4]
+Replacing Subsystem_2.$procdff$6084 ($adff): CLK=\clk, D=$0\cfblk158_reg[0][5:5], Q=\cfblk158_reg[0] [5]
+Replacing Subsystem_2.$procdff$6083 ($adff): CLK=\clk, D=$0\cfblk158_reg[0][6:6], Q=\cfblk158_reg[0] [6]
+Replacing Subsystem_2.$procdff$6082 ($adff): CLK=\clk, D=$0\cfblk158_reg[0][7:7], Q=\cfblk158_reg[0] [7]
+Replacing Subsystem_2.$procdff$6081 ($adff): CLK=\clk, D=$0\cfblk158_reg[1][0:0], Q=\cfblk158_reg[1] [0]
+Replacing Subsystem_2.$procdff$6080 ($adff): CLK=\clk, D=$0\cfblk158_reg[1][1:1], Q=\cfblk158_reg[1] [1]
+Replacing Subsystem_2.$procdff$6079 ($adff): CLK=\clk, D=$0\cfblk158_reg[1][2:2], Q=\cfblk158_reg[1] [2]
+Replacing Subsystem_2.$procdff$6078 ($adff): CLK=\clk, D=$0\cfblk158_reg[1][3:3], Q=\cfblk158_reg[1] [3]
+Replacing Subsystem_2.$procdff$6077 ($adff): CLK=\clk, D=$0\cfblk158_reg[1][4:4], Q=\cfblk158_reg[1] [4]
+Replacing Subsystem_2.$procdff$6076 ($adff): CLK=\clk, D=$0\cfblk158_reg[1][5:5], Q=\cfblk158_reg[1] [5]
+Replacing Subsystem_2.$procdff$6075 ($adff): CLK=\clk, D=$0\cfblk158_reg[1][6:6], Q=\cfblk158_reg[1] [6]
+Replacing Subsystem_2.$procdff$6074 ($adff): CLK=\clk, D=$0\cfblk158_reg[1][7:7], Q=\cfblk158_reg[1] [7]
+Replacing Subsystem_2.$procdff$6073 ($adff): CLK=\clk, D=$0\emi_121_reg[0][0:0], Q=\emi_121_reg[0] [0]
+Replacing Subsystem_2.$procdff$6072 ($adff): CLK=\clk, D=$0\emi_121_reg[0][1:1], Q=\emi_121_reg[0] [1]
+Replacing Subsystem_2.$procdff$6071 ($adff): CLK=\clk, D=$0\emi_121_reg[0][2:2], Q=\emi_121_reg[0] [2]
+Replacing Subsystem_2.$procdff$6070 ($adff): CLK=\clk, D=$0\emi_121_reg[0][3:3], Q=\emi_121_reg[0] [3]
+Replacing Subsystem_2.$procdff$6069 ($adff): CLK=\clk, D=$0\emi_121_reg[0][4:4], Q=\emi_121_reg[0] [4]
+Replacing Subsystem_2.$procdff$6068 ($adff): CLK=\clk, D=$0\emi_121_reg[0][5:5], Q=\emi_121_reg[0] [5]
+Replacing Subsystem_2.$procdff$6067 ($adff): CLK=\clk, D=$0\emi_121_reg[0][6:6], Q=\emi_121_reg[0] [6]
+Replacing Subsystem_2.$procdff$6066 ($adff): CLK=\clk, D=$0\emi_121_reg[0][7:7], Q=\emi_121_reg[0] [7]
+Replacing Subsystem_2.$procdff$6065 ($adff): CLK=\clk, D=$0\emi_121_reg[1][0:0], Q=\emi_121_reg[1] [0]
+Replacing Subsystem_2.$procdff$6064 ($adff): CLK=\clk, D=$0\emi_121_reg[1][1:1], Q=\emi_121_reg[1] [1]
+Replacing Subsystem_2.$procdff$6063 ($adff): CLK=\clk, D=$0\emi_121_reg[1][2:2], Q=\emi_121_reg[1] [2]
+Replacing Subsystem_2.$procdff$6062 ($adff): CLK=\clk, D=$0\emi_121_reg[1][3:3], Q=\emi_121_reg[1] [3]
+Replacing Subsystem_2.$procdff$6061 ($adff): CLK=\clk, D=$0\emi_121_reg[1][4:4], Q=\emi_121_reg[1] [4]
+Replacing Subsystem_2.$procdff$6060 ($adff): CLK=\clk, D=$0\emi_121_reg[1][5:5], Q=\emi_121_reg[1] [5]
+Replacing Subsystem_2.$procdff$6059 ($adff): CLK=\clk, D=$0\emi_121_reg[1][6:6], Q=\emi_121_reg[1] [6]
+Replacing Subsystem_2.$procdff$6058 ($adff): CLK=\clk, D=$0\emi_121_reg[1][7:7], Q=\emi_121_reg[1] [7]
+Replacing Subsystem_2.$procdff$6057 ($adff): CLK=\clk, D=$0\emi_72_reg[0][0:0], Q=\emi_72_reg[0] [0]
+Replacing Subsystem_2.$procdff$6056 ($adff): CLK=\clk, D=$0\emi_72_reg[0][1:1], Q=\emi_72_reg[0] [1]
+Replacing Subsystem_2.$procdff$6055 ($adff): CLK=\clk, D=$0\emi_72_reg[0][2:2], Q=\emi_72_reg[0] [2]
+Replacing Subsystem_2.$procdff$6054 ($adff): CLK=\clk, D=$0\emi_72_reg[0][3:3], Q=\emi_72_reg[0] [3]
+Replacing Subsystem_2.$procdff$6053 ($adff): CLK=\clk, D=$0\emi_72_reg[0][4:4], Q=\emi_72_reg[0] [4]
+Replacing Subsystem_2.$procdff$6052 ($adff): CLK=\clk, D=$0\emi_72_reg[0][5:5], Q=\emi_72_reg[0] [5]
+Replacing Subsystem_2.$procdff$6051 ($adff): CLK=\clk, D=$0\emi_72_reg[0][6:6], Q=\emi_72_reg[0] [6]
+Replacing Subsystem_2.$procdff$6050 ($adff): CLK=\clk, D=$0\emi_72_reg[0][7:7], Q=\emi_72_reg[0] [7]
+Replacing Subsystem_2.$procdff$6049 ($adff): CLK=\clk, D=$0\emi_72_reg[1][0:0], Q=\emi_72_reg[1] [0]
+Replacing Subsystem_2.$procdff$6048 ($adff): CLK=\clk, D=$0\emi_72_reg[1][1:1], Q=\emi_72_reg[1] [1]
+Replacing Subsystem_2.$procdff$6047 ($adff): CLK=\clk, D=$0\emi_72_reg[1][2:2], Q=\emi_72_reg[1] [2]
+Replacing Subsystem_2.$procdff$6046 ($adff): CLK=\clk, D=$0\emi_72_reg[1][3:3], Q=\emi_72_reg[1] [3]
+Replacing Subsystem_2.$procdff$6045 ($adff): CLK=\clk, D=$0\emi_72_reg[1][4:4], Q=\emi_72_reg[1] [4]
+Replacing Subsystem_2.$procdff$6044 ($adff): CLK=\clk, D=$0\emi_72_reg[1][5:5], Q=\emi_72_reg[1] [5]
+Replacing Subsystem_2.$procdff$6043 ($adff): CLK=\clk, D=$0\emi_72_reg[1][6:6], Q=\emi_72_reg[1] [6]
+Replacing Subsystem_2.$procdff$6042 ($adff): CLK=\clk, D=$0\emi_72_reg[1][7:7], Q=\emi_72_reg[1] [7]
+Replacing Subsystem_2.$procdff$6041 ($adff): CLK=\clk, D=$0\emi_177_reg[0][0:0], Q=\emi_177_reg[0] [0]
+Replacing Subsystem_2.$procdff$6040 ($adff): CLK=\clk, D=$0\emi_177_reg[0][1:1], Q=\emi_177_reg[0] [1]
+Replacing Subsystem_2.$procdff$6039 ($adff): CLK=\clk, D=$0\emi_177_reg[0][2:2], Q=\emi_177_reg[0] [2]
+Replacing Subsystem_2.$procdff$6038 ($adff): CLK=\clk, D=$0\emi_177_reg[0][3:3], Q=\emi_177_reg[0] [3]
+Replacing Subsystem_2.$procdff$6037 ($adff): CLK=\clk, D=$0\emi_177_reg[0][4:4], Q=\emi_177_reg[0] [4]
+Replacing Subsystem_2.$procdff$6036 ($adff): CLK=\clk, D=$0\emi_177_reg[0][5:5], Q=\emi_177_reg[0] [5]
+Replacing Subsystem_2.$procdff$6035 ($adff): CLK=\clk, D=$0\emi_177_reg[0][6:6], Q=\emi_177_reg[0] [6]
+Replacing Subsystem_2.$procdff$6034 ($adff): CLK=\clk, D=$0\emi_177_reg[0][7:7], Q=\emi_177_reg[0] [7]
+Replacing Subsystem_2.$procdff$6033 ($adff): CLK=\clk, D=$0\emi_177_reg[1][0:0], Q=\emi_177_reg[1] [0]
+Replacing Subsystem_2.$procdff$6032 ($adff): CLK=\clk, D=$0\emi_177_reg[1][1:1], Q=\emi_177_reg[1] [1]
+Replacing Subsystem_2.$procdff$6031 ($adff): CLK=\clk, D=$0\emi_177_reg[1][2:2], Q=\emi_177_reg[1] [2]
+Replacing Subsystem_2.$procdff$6030 ($adff): CLK=\clk, D=$0\emi_177_reg[1][3:3], Q=\emi_177_reg[1] [3]
+Replacing Subsystem_2.$procdff$6029 ($adff): CLK=\clk, D=$0\emi_177_reg[1][4:4], Q=\emi_177_reg[1] [4]
+Replacing Subsystem_2.$procdff$6028 ($adff): CLK=\clk, D=$0\emi_177_reg[1][5:5], Q=\emi_177_reg[1] [5]
+Replacing Subsystem_2.$procdff$6027 ($adff): CLK=\clk, D=$0\emi_177_reg[1][6:6], Q=\emi_177_reg[1] [6]
+Replacing Subsystem_2.$procdff$6026 ($adff): CLK=\clk, D=$0\emi_177_reg[1][7:7], Q=\emi_177_reg[1] [7]
+Replacing Subsystem_2.$procdff$6025 ($adff): CLK=\clk, D=$0\cfblk163_reg[0][0:0], Q=\cfblk163_reg[0] [0]
+Replacing Subsystem_2.$procdff$6024 ($adff): CLK=\clk, D=$0\cfblk163_reg[0][1:1], Q=\cfblk163_reg[0] [1]
+Replacing Subsystem_2.$procdff$6023 ($adff): CLK=\clk, D=$0\cfblk163_reg[0][2:2], Q=\cfblk163_reg[0] [2]
+Replacing Subsystem_2.$procdff$6022 ($adff): CLK=\clk, D=$0\cfblk163_reg[0][3:3], Q=\cfblk163_reg[0] [3]
+Replacing Subsystem_2.$procdff$6021 ($adff): CLK=\clk, D=$0\cfblk163_reg[0][4:4], Q=\cfblk163_reg[0] [4]
+Replacing Subsystem_2.$procdff$6020 ($adff): CLK=\clk, D=$0\cfblk163_reg[0][5:5], Q=\cfblk163_reg[0] [5]
+Replacing Subsystem_2.$procdff$6019 ($adff): CLK=\clk, D=$0\cfblk163_reg[0][6:6], Q=\cfblk163_reg[0] [6]
+Replacing Subsystem_2.$procdff$6018 ($adff): CLK=\clk, D=$0\cfblk163_reg[0][7:7], Q=\cfblk163_reg[0] [7]
+Replacing Subsystem_2.$procdff$6017 ($adff): CLK=\clk, D=$0\cfblk163_reg[1][0:0], Q=\cfblk163_reg[1] [0]
+Replacing Subsystem_2.$procdff$6016 ($adff): CLK=\clk, D=$0\cfblk163_reg[1][1:1], Q=\cfblk163_reg[1] [1]
+Replacing Subsystem_2.$procdff$6015 ($adff): CLK=\clk, D=$0\cfblk163_reg[1][2:2], Q=\cfblk163_reg[1] [2]
+Replacing Subsystem_2.$procdff$6014 ($adff): CLK=\clk, D=$0\cfblk163_reg[1][3:3], Q=\cfblk163_reg[1] [3]
+Replacing Subsystem_2.$procdff$6013 ($adff): CLK=\clk, D=$0\cfblk163_reg[1][4:4], Q=\cfblk163_reg[1] [4]
+Replacing Subsystem_2.$procdff$6012 ($adff): CLK=\clk, D=$0\cfblk163_reg[1][5:5], Q=\cfblk163_reg[1] [5]
+Replacing Subsystem_2.$procdff$6011 ($adff): CLK=\clk, D=$0\cfblk163_reg[1][6:6], Q=\cfblk163_reg[1] [6]
+Replacing Subsystem_2.$procdff$6010 ($adff): CLK=\clk, D=$0\cfblk163_reg[1][7:7], Q=\cfblk163_reg[1] [7]
+Replacing Subsystem_2.$procdff$6009 ($adff): CLK=\clk, D=$0\emi_257_reg[0][0:0], Q=\emi_257_reg[0] [0]
+Replacing Subsystem_2.$procdff$6008 ($adff): CLK=\clk, D=$0\emi_257_reg[0][1:1], Q=\emi_257_reg[0] [1]
+Replacing Subsystem_2.$procdff$6007 ($adff): CLK=\clk, D=$0\emi_257_reg[0][2:2], Q=\emi_257_reg[0] [2]
+Replacing Subsystem_2.$procdff$6006 ($adff): CLK=\clk, D=$0\emi_257_reg[0][3:3], Q=\emi_257_reg[0] [3]
+Replacing Subsystem_2.$procdff$6005 ($adff): CLK=\clk, D=$0\emi_257_reg[0][4:4], Q=\emi_257_reg[0] [4]
+Replacing Subsystem_2.$procdff$6004 ($adff): CLK=\clk, D=$0\emi_257_reg[0][5:5], Q=\emi_257_reg[0] [5]
+Replacing Subsystem_2.$procdff$6003 ($adff): CLK=\clk, D=$0\emi_257_reg[0][6:6], Q=\emi_257_reg[0] [6]
+Replacing Subsystem_2.$procdff$6002 ($adff): CLK=\clk, D=$0\emi_257_reg[0][7:7], Q=\emi_257_reg[0] [7]
+Replacing Subsystem_2.$procdff$6001 ($adff): CLK=\clk, D=$0\emi_257_reg[1][0:0], Q=\emi_257_reg[1] [0]
+Replacing Subsystem_2.$procdff$6000 ($adff): CLK=\clk, D=$0\emi_257_reg[1][1:1], Q=\emi_257_reg[1] [1]
+Replacing Subsystem_2.$procdff$5999 ($adff): CLK=\clk, D=$0\emi_257_reg[1][2:2], Q=\emi_257_reg[1] [2]
+Replacing Subsystem_2.$procdff$5998 ($adff): CLK=\clk, D=$0\emi_257_reg[1][3:3], Q=\emi_257_reg[1] [3]
+Replacing Subsystem_2.$procdff$5997 ($adff): CLK=\clk, D=$0\emi_257_reg[1][4:4], Q=\emi_257_reg[1] [4]
+Replacing Subsystem_2.$procdff$5996 ($adff): CLK=\clk, D=$0\emi_257_reg[1][5:5], Q=\emi_257_reg[1] [5]
+Replacing Subsystem_2.$procdff$5995 ($adff): CLK=\clk, D=$0\emi_257_reg[1][6:6], Q=\emi_257_reg[1] [6]
+Replacing Subsystem_2.$procdff$5994 ($adff): CLK=\clk, D=$0\emi_257_reg[1][7:7], Q=\emi_257_reg[1] [7]
+Replacing Subsystem_2.$procdff$5993 ($adff): CLK=\clk, D=$0\cfblk166_reg[0][0:0], Q=\cfblk166_reg[0] [0]
+Replacing Subsystem_2.$procdff$5992 ($adff): CLK=\clk, D=$0\cfblk166_reg[0][1:1], Q=\cfblk166_reg[0] [1]
+Replacing Subsystem_2.$procdff$5991 ($adff): CLK=\clk, D=$0\cfblk166_reg[0][2:2], Q=\cfblk166_reg[0] [2]
+Replacing Subsystem_2.$procdff$5990 ($adff): CLK=\clk, D=$0\cfblk166_reg[0][3:3], Q=\cfblk166_reg[0] [3]
+Replacing Subsystem_2.$procdff$5989 ($adff): CLK=\clk, D=$0\cfblk166_reg[0][4:4], Q=\cfblk166_reg[0] [4]
+Replacing Subsystem_2.$procdff$5988 ($adff): CLK=\clk, D=$0\cfblk166_reg[0][5:5], Q=\cfblk166_reg[0] [5]
+Replacing Subsystem_2.$procdff$5987 ($adff): CLK=\clk, D=$0\cfblk166_reg[0][6:6], Q=\cfblk166_reg[0] [6]
+Replacing Subsystem_2.$procdff$5986 ($adff): CLK=\clk, D=$0\cfblk166_reg[0][7:7], Q=\cfblk166_reg[0] [7]
+Replacing Subsystem_2.$procdff$5985 ($adff): CLK=\clk, D=$0\cfblk166_reg[1][0:0], Q=\cfblk166_reg[1] [0]
+Replacing Subsystem_2.$procdff$5984 ($adff): CLK=\clk, D=$0\cfblk166_reg[1][1:1], Q=\cfblk166_reg[1] [1]
+Replacing Subsystem_2.$procdff$5983 ($adff): CLK=\clk, D=$0\cfblk166_reg[1][2:2], Q=\cfblk166_reg[1] [2]
+Replacing Subsystem_2.$procdff$5982 ($adff): CLK=\clk, D=$0\cfblk166_reg[1][3:3], Q=\cfblk166_reg[1] [3]
+Replacing Subsystem_2.$procdff$5981 ($adff): CLK=\clk, D=$0\cfblk166_reg[1][4:4], Q=\cfblk166_reg[1] [4]
+Replacing Subsystem_2.$procdff$5980 ($adff): CLK=\clk, D=$0\cfblk166_reg[1][5:5], Q=\cfblk166_reg[1] [5]
+Replacing Subsystem_2.$procdff$5979 ($adff): CLK=\clk, D=$0\cfblk166_reg[1][6:6], Q=\cfblk166_reg[1] [6]
+Replacing Subsystem_2.$procdff$5978 ($adff): CLK=\clk, D=$0\cfblk166_reg[1][7:7], Q=\cfblk166_reg[1] [7]
+Replacing Subsystem_2.$procdff$5977 ($adff): CLK=\clk, D=$0\emi_217_reg[0][0:0], Q=\emi_217_reg[0] [0]
+Replacing Subsystem_2.$procdff$5976 ($adff): CLK=\clk, D=$0\emi_217_reg[0][1:1], Q=\emi_217_reg[0] [1]
+Replacing Subsystem_2.$procdff$5975 ($adff): CLK=\clk, D=$0\emi_217_reg[0][2:2], Q=\emi_217_reg[0] [2]
+Replacing Subsystem_2.$procdff$5974 ($adff): CLK=\clk, D=$0\emi_217_reg[0][3:3], Q=\emi_217_reg[0] [3]
+Replacing Subsystem_2.$procdff$5973 ($adff): CLK=\clk, D=$0\emi_217_reg[0][4:4], Q=\emi_217_reg[0] [4]
+Replacing Subsystem_2.$procdff$5972 ($adff): CLK=\clk, D=$0\emi_217_reg[0][5:5], Q=\emi_217_reg[0] [5]
+Replacing Subsystem_2.$procdff$5971 ($adff): CLK=\clk, D=$0\emi_217_reg[0][6:6], Q=\emi_217_reg[0] [6]
+Replacing Subsystem_2.$procdff$5970 ($adff): CLK=\clk, D=$0\emi_217_reg[0][7:7], Q=\emi_217_reg[0] [7]
+Replacing Subsystem_2.$procdff$5969 ($adff): CLK=\clk, D=$0\emi_217_reg[1][0:0], Q=\emi_217_reg[1] [0]
+Replacing Subsystem_2.$procdff$5968 ($adff): CLK=\clk, D=$0\emi_217_reg[1][1:1], Q=\emi_217_reg[1] [1]
+Replacing Subsystem_2.$procdff$5967 ($adff): CLK=\clk, D=$0\emi_217_reg[1][2:2], Q=\emi_217_reg[1] [2]
+Replacing Subsystem_2.$procdff$5966 ($adff): CLK=\clk, D=$0\emi_217_reg[1][3:3], Q=\emi_217_reg[1] [3]
+Replacing Subsystem_2.$procdff$5965 ($adff): CLK=\clk, D=$0\emi_217_reg[1][4:4], Q=\emi_217_reg[1] [4]
+Replacing Subsystem_2.$procdff$5964 ($adff): CLK=\clk, D=$0\emi_217_reg[1][5:5], Q=\emi_217_reg[1] [5]
+Replacing Subsystem_2.$procdff$5963 ($adff): CLK=\clk, D=$0\emi_217_reg[1][6:6], Q=\emi_217_reg[1] [6]
+Replacing Subsystem_2.$procdff$5962 ($adff): CLK=\clk, D=$0\emi_217_reg[1][7:7], Q=\emi_217_reg[1] [7]
+Replacing Subsystem_2.$procdff$5961 ($adff): CLK=\clk, D=$0\cfblk165_reg[0][0:0], Q=\cfblk165_reg[0] [0]
+Replacing Subsystem_2.$procdff$5960 ($adff): CLK=\clk, D=$0\cfblk165_reg[0][1:1], Q=\cfblk165_reg[0] [1]
+Replacing Subsystem_2.$procdff$5959 ($adff): CLK=\clk, D=$0\cfblk165_reg[0][2:2], Q=\cfblk165_reg[0] [2]
+Replacing Subsystem_2.$procdff$5958 ($adff): CLK=\clk, D=$0\cfblk165_reg[0][3:3], Q=\cfblk165_reg[0] [3]
+Replacing Subsystem_2.$procdff$5957 ($adff): CLK=\clk, D=$0\cfblk165_reg[0][4:4], Q=\cfblk165_reg[0] [4]
+Replacing Subsystem_2.$procdff$5956 ($adff): CLK=\clk, D=$0\cfblk165_reg[0][5:5], Q=\cfblk165_reg[0] [5]
+Replacing Subsystem_2.$procdff$5955 ($adff): CLK=\clk, D=$0\cfblk165_reg[0][6:6], Q=\cfblk165_reg[0] [6]
+Replacing Subsystem_2.$procdff$5954 ($adff): CLK=\clk, D=$0\cfblk165_reg[0][7:7], Q=\cfblk165_reg[0] [7]
+Replacing Subsystem_2.$procdff$5953 ($adff): CLK=\clk, D=$0\cfblk165_reg[1][0:0], Q=\cfblk165_reg[1] [0]
+Replacing Subsystem_2.$procdff$5952 ($adff): CLK=\clk, D=$0\cfblk165_reg[1][1:1], Q=\cfblk165_reg[1] [1]
+Replacing Subsystem_2.$procdff$5951 ($adff): CLK=\clk, D=$0\cfblk165_reg[1][2:2], Q=\cfblk165_reg[1] [2]
+Replacing Subsystem_2.$procdff$5950 ($adff): CLK=\clk, D=$0\cfblk165_reg[1][3:3], Q=\cfblk165_reg[1] [3]
+Replacing Subsystem_2.$procdff$5949 ($adff): CLK=\clk, D=$0\cfblk165_reg[1][4:4], Q=\cfblk165_reg[1] [4]
+Replacing Subsystem_2.$procdff$5948 ($adff): CLK=\clk, D=$0\cfblk165_reg[1][5:5], Q=\cfblk165_reg[1] [5]
+Replacing Subsystem_2.$procdff$5947 ($adff): CLK=\clk, D=$0\cfblk165_reg[1][6:6], Q=\cfblk165_reg[1] [6]
+Replacing Subsystem_2.$procdff$5946 ($adff): CLK=\clk, D=$0\cfblk165_reg[1][7:7], Q=\cfblk165_reg[1] [7]
+Replacing Subsystem_2.$procdff$5945 ($adff): CLK=\clk, D=$0\emi_145_reg_reg[0][0][0:0], Q=\emi_145_reg_reg[0][0]
+Replacing Subsystem_2.$procdff$5944 ($adff): CLK=\clk, D=$0\emi_145_reg_reg[0][6][0:0], Q=\emi_145_reg_reg[0][6]
+Replacing Subsystem_2.$procdff$5943 ($adff): CLK=\clk, D=$0\emi_145_reg_reg[1][0][0:0], Q=\emi_145_reg_reg[1][0]
+Replacing Subsystem_2.$procdff$5942 ($adff): CLK=\clk, D=$0\emi_145_reg_reg[1][6][0:0], Q=\emi_145_reg_reg[1][6]
+Replacing Subsystem_2.$procdff$5941 ($adff): CLK=\clk, D=$0\emi_31_reg[0][0:0], Q=\emi_31_reg[0] [0]
+Replacing Subsystem_2.$procdff$5940 ($adff): CLK=\clk, D=$0\emi_31_reg[0][1:1], Q=\emi_31_reg[0] [1]
+Replacing Subsystem_2.$procdff$5939 ($adff): CLK=\clk, D=$0\emi_31_reg[0][2:2], Q=\emi_31_reg[0] [2]
+Replacing Subsystem_2.$procdff$5938 ($adff): CLK=\clk, D=$0\emi_31_reg[0][3:3], Q=\emi_31_reg[0] [3]
+Replacing Subsystem_2.$procdff$5937 ($adff): CLK=\clk, D=$0\emi_31_reg[0][4:4], Q=\emi_31_reg[0] [4]
+Replacing Subsystem_2.$procdff$5936 ($adff): CLK=\clk, D=$0\emi_31_reg[0][5:5], Q=\emi_31_reg[0] [5]
+Replacing Subsystem_2.$procdff$5935 ($adff): CLK=\clk, D=$0\emi_31_reg[0][6:6], Q=\emi_31_reg[0] [6]
+Replacing Subsystem_2.$procdff$5934 ($adff): CLK=\clk, D=$0\emi_31_reg[0][7:7], Q=\emi_31_reg[0] [7]
+Replacing Subsystem_2.$procdff$5933 ($adff): CLK=\clk, D=$0\emi_31_reg[1][0:0], Q=\emi_31_reg[1] [0]
+Replacing Subsystem_2.$procdff$5932 ($adff): CLK=\clk, D=$0\emi_31_reg[1][1:1], Q=\emi_31_reg[1] [1]
+Replacing Subsystem_2.$procdff$5931 ($adff): CLK=\clk, D=$0\emi_31_reg[1][2:2], Q=\emi_31_reg[1] [2]
+Replacing Subsystem_2.$procdff$5930 ($adff): CLK=\clk, D=$0\emi_31_reg[1][3:3], Q=\emi_31_reg[1] [3]
+Replacing Subsystem_2.$procdff$5929 ($adff): CLK=\clk, D=$0\emi_31_reg[1][4:4], Q=\emi_31_reg[1] [4]
+Replacing Subsystem_2.$procdff$5928 ($adff): CLK=\clk, D=$0\emi_31_reg[1][5:5], Q=\emi_31_reg[1] [5]
+Replacing Subsystem_2.$procdff$5927 ($adff): CLK=\clk, D=$0\emi_31_reg[1][6:6], Q=\emi_31_reg[1] [6]
+Replacing Subsystem_2.$procdff$5926 ($adff): CLK=\clk, D=$0\emi_31_reg[1][7:7], Q=\emi_31_reg[1] [7]
+Replacing Subsystem_2.$procdff$5925 ($adff): CLK=\clk, D=$0\emi_225_reg[0][0:0], Q=\emi_225_reg[0] [0]
+Replacing Subsystem_2.$procdff$5924 ($adff): CLK=\clk, D=$0\emi_225_reg[0][1:1], Q=\emi_225_reg[0] [1]
+Replacing Subsystem_2.$procdff$5923 ($adff): CLK=\clk, D=$0\emi_225_reg[0][2:2], Q=\emi_225_reg[0] [2]
+Replacing Subsystem_2.$procdff$5922 ($adff): CLK=\clk, D=$0\emi_225_reg[0][3:3], Q=\emi_225_reg[0] [3]
+Replacing Subsystem_2.$procdff$5921 ($adff): CLK=\clk, D=$0\emi_225_reg[0][4:4], Q=\emi_225_reg[0] [4]
+Replacing Subsystem_2.$procdff$5920 ($adff): CLK=\clk, D=$0\emi_225_reg[0][5:5], Q=\emi_225_reg[0] [5]
+Replacing Subsystem_2.$procdff$5919 ($adff): CLK=\clk, D=$0\emi_225_reg[0][6:6], Q=\emi_225_reg[0] [6]
+Replacing Subsystem_2.$procdff$5918 ($adff): CLK=\clk, D=$0\emi_225_reg[0][7:7], Q=\emi_225_reg[0] [7]
+Replacing Subsystem_2.$procdff$5917 ($adff): CLK=\clk, D=$0\emi_225_reg[1][0:0], Q=\emi_225_reg[1] [0]
+Replacing Subsystem_2.$procdff$5916 ($adff): CLK=\clk, D=$0\emi_225_reg[1][1:1], Q=\emi_225_reg[1] [1]
+Replacing Subsystem_2.$procdff$5915 ($adff): CLK=\clk, D=$0\emi_225_reg[1][2:2], Q=\emi_225_reg[1] [2]
+Replacing Subsystem_2.$procdff$5914 ($adff): CLK=\clk, D=$0\emi_225_reg[1][3:3], Q=\emi_225_reg[1] [3]
+Replacing Subsystem_2.$procdff$5913 ($adff): CLK=\clk, D=$0\emi_225_reg[1][4:4], Q=\emi_225_reg[1] [4]
+Replacing Subsystem_2.$procdff$5912 ($adff): CLK=\clk, D=$0\emi_225_reg[1][5:5], Q=\emi_225_reg[1] [5]
+Replacing Subsystem_2.$procdff$5911 ($adff): CLK=\clk, D=$0\emi_225_reg[1][6:6], Q=\emi_225_reg[1] [6]
+Replacing Subsystem_2.$procdff$5910 ($adff): CLK=\clk, D=$0\emi_225_reg[1][7:7], Q=\emi_225_reg[1] [7]
+Replacing Subsystem_2.$procdff$5909 ($adff): CLK=\clk, D=$0\emi_80_reg[0][0:0], Q=\emi_80_reg[0] [0]
+Replacing Subsystem_2.$procdff$5908 ($adff): CLK=\clk, D=$0\emi_80_reg[0][1:1], Q=\emi_80_reg[0] [1]
+Replacing Subsystem_2.$procdff$5907 ($adff): CLK=\clk, D=$0\emi_80_reg[0][2:2], Q=\emi_80_reg[0] [2]
+Replacing Subsystem_2.$procdff$5906 ($adff): CLK=\clk, D=$0\emi_80_reg[0][3:3], Q=\emi_80_reg[0] [3]
+Replacing Subsystem_2.$procdff$5905 ($adff): CLK=\clk, D=$0\emi_80_reg[0][4:4], Q=\emi_80_reg[0] [4]
+Replacing Subsystem_2.$procdff$5904 ($adff): CLK=\clk, D=$0\emi_80_reg[0][5:5], Q=\emi_80_reg[0] [5]
+Replacing Subsystem_2.$procdff$5903 ($adff): CLK=\clk, D=$0\emi_80_reg[0][6:6], Q=\emi_80_reg[0] [6]
+Replacing Subsystem_2.$procdff$5902 ($adff): CLK=\clk, D=$0\emi_80_reg[0][7:7], Q=\emi_80_reg[0] [7]
+Replacing Subsystem_2.$procdff$5901 ($adff): CLK=\clk, D=$0\emi_80_reg[1][0:0], Q=\emi_80_reg[1] [0]
+Replacing Subsystem_2.$procdff$5900 ($adff): CLK=\clk, D=$0\emi_80_reg[1][1:1], Q=\emi_80_reg[1] [1]
+Replacing Subsystem_2.$procdff$5899 ($adff): CLK=\clk, D=$0\emi_80_reg[1][2:2], Q=\emi_80_reg[1] [2]
+Replacing Subsystem_2.$procdff$5898 ($adff): CLK=\clk, D=$0\emi_80_reg[1][3:3], Q=\emi_80_reg[1] [3]
+Replacing Subsystem_2.$procdff$5897 ($adff): CLK=\clk, D=$0\emi_80_reg[1][4:4], Q=\emi_80_reg[1] [4]
+Replacing Subsystem_2.$procdff$5896 ($adff): CLK=\clk, D=$0\emi_80_reg[1][5:5], Q=\emi_80_reg[1] [5]
+Replacing Subsystem_2.$procdff$5895 ($adff): CLK=\clk, D=$0\emi_80_reg[1][6:6], Q=\emi_80_reg[1] [6]
+Replacing Subsystem_2.$procdff$5894 ($adff): CLK=\clk, D=$0\emi_80_reg[1][7:7], Q=\emi_80_reg[1] [7]
+Replacing Subsystem_2.$procdff$5893 ($adff): CLK=\clk, D=$0\cfblk175_reg[0][0:0], Q=\cfblk175_reg[0] [0]
+Replacing Subsystem_2.$procdff$5892 ($adff): CLK=\clk, D=$0\cfblk175_reg[0][1:1], Q=\cfblk175_reg[0] [1]
+Replacing Subsystem_2.$procdff$5891 ($adff): CLK=\clk, D=$0\cfblk175_reg[0][2:2], Q=\cfblk175_reg[0] [2]
+Replacing Subsystem_2.$procdff$5890 ($adff): CLK=\clk, D=$0\cfblk175_reg[0][3:3], Q=\cfblk175_reg[0] [3]
+Replacing Subsystem_2.$procdff$5889 ($adff): CLK=\clk, D=$0\cfblk175_reg[0][4:4], Q=\cfblk175_reg[0] [4]
+Replacing Subsystem_2.$procdff$5888 ($adff): CLK=\clk, D=$0\cfblk175_reg[0][5:5], Q=\cfblk175_reg[0] [5]
+Replacing Subsystem_2.$procdff$5887 ($adff): CLK=\clk, D=$0\cfblk175_reg[0][6:6], Q=\cfblk175_reg[0] [6]
+Replacing Subsystem_2.$procdff$5886 ($adff): CLK=\clk, D=$0\cfblk175_reg[0][7:7], Q=\cfblk175_reg[0] [7]
+Replacing Subsystem_2.$procdff$5885 ($adff): CLK=\clk, D=$0\cfblk175_reg[1][0:0], Q=\cfblk175_reg[1] [0]
+Replacing Subsystem_2.$procdff$5884 ($adff): CLK=\clk, D=$0\cfblk175_reg[1][1:1], Q=\cfblk175_reg[1] [1]
+Replacing Subsystem_2.$procdff$5883 ($adff): CLK=\clk, D=$0\cfblk175_reg[1][2:2], Q=\cfblk175_reg[1] [2]
+Replacing Subsystem_2.$procdff$5882 ($adff): CLK=\clk, D=$0\cfblk175_reg[1][3:3], Q=\cfblk175_reg[1] [3]
+Replacing Subsystem_2.$procdff$5881 ($adff): CLK=\clk, D=$0\cfblk175_reg[1][4:4], Q=\cfblk175_reg[1] [4]
+Replacing Subsystem_2.$procdff$5880 ($adff): CLK=\clk, D=$0\cfblk175_reg[1][5:5], Q=\cfblk175_reg[1] [5]
+Replacing Subsystem_2.$procdff$5879 ($adff): CLK=\clk, D=$0\cfblk175_reg[1][6:6], Q=\cfblk175_reg[1] [6]
+Replacing Subsystem_2.$procdff$5878 ($adff): CLK=\clk, D=$0\cfblk175_reg[1][7:7], Q=\cfblk175_reg[1] [7]
+Replacing Subsystem_2.$procdff$5877 ($adff): CLK=\clk, D=$0\emi_15_reg[0][0:0], Q=\emi_15_reg[0] [0]
+Replacing Subsystem_2.$procdff$5876 ($adff): CLK=\clk, D=$0\emi_15_reg[0][1:1], Q=\emi_15_reg[0] [1]
+Replacing Subsystem_2.$procdff$5875 ($adff): CLK=\clk, D=$0\emi_15_reg[0][2:2], Q=\emi_15_reg[0] [2]
+Replacing Subsystem_2.$procdff$5874 ($adff): CLK=\clk, D=$0\emi_15_reg[0][3:3], Q=\emi_15_reg[0] [3]
+Replacing Subsystem_2.$procdff$5873 ($adff): CLK=\clk, D=$0\emi_15_reg[0][4:4], Q=\emi_15_reg[0] [4]
+Replacing Subsystem_2.$procdff$5872 ($adff): CLK=\clk, D=$0\emi_15_reg[0][5:5], Q=\emi_15_reg[0] [5]
+Replacing Subsystem_2.$procdff$5871 ($adff): CLK=\clk, D=$0\emi_15_reg[0][6:6], Q=\emi_15_reg[0] [6]
+Replacing Subsystem_2.$procdff$5870 ($adff): CLK=\clk, D=$0\emi_15_reg[0][7:7], Q=\emi_15_reg[0] [7]
+Replacing Subsystem_2.$procdff$5869 ($adff): CLK=\clk, D=$0\emi_15_reg[1][0:0], Q=\emi_15_reg[1] [0]
+Replacing Subsystem_2.$procdff$5868 ($adff): CLK=\clk, D=$0\emi_15_reg[1][1:1], Q=\emi_15_reg[1] [1]
+Replacing Subsystem_2.$procdff$5867 ($adff): CLK=\clk, D=$0\emi_15_reg[1][2:2], Q=\emi_15_reg[1] [2]
+Replacing Subsystem_2.$procdff$5866 ($adff): CLK=\clk, D=$0\emi_15_reg[1][3:3], Q=\emi_15_reg[1] [3]
+Replacing Subsystem_2.$procdff$5865 ($adff): CLK=\clk, D=$0\emi_15_reg[1][4:4], Q=\emi_15_reg[1] [4]
+Replacing Subsystem_2.$procdff$5864 ($adff): CLK=\clk, D=$0\emi_15_reg[1][5:5], Q=\emi_15_reg[1] [5]
+Replacing Subsystem_2.$procdff$5863 ($adff): CLK=\clk, D=$0\emi_15_reg[1][6:6], Q=\emi_15_reg[1] [6]
+Replacing Subsystem_2.$procdff$5862 ($adff): CLK=\clk, D=$0\emi_15_reg[1][7:7], Q=\emi_15_reg[1] [7]
+Replacing Subsystem_2.$procdff$5861 ($adff): CLK=\clk, D=$0\cfblk170_reg[0][0:0], Q=\cfblk170_reg[0] [0]
+Replacing Subsystem_2.$procdff$5860 ($adff): CLK=\clk, D=$0\cfblk170_reg[0][1:1], Q=\cfblk170_reg[0] [1]
+Replacing Subsystem_2.$procdff$5859 ($adff): CLK=\clk, D=$0\cfblk170_reg[0][2:2], Q=\cfblk170_reg[0] [2]
+Replacing Subsystem_2.$procdff$5858 ($adff): CLK=\clk, D=$0\cfblk170_reg[0][3:3], Q=\cfblk170_reg[0] [3]
+Replacing Subsystem_2.$procdff$5857 ($adff): CLK=\clk, D=$0\cfblk170_reg[0][4:4], Q=\cfblk170_reg[0] [4]
+Replacing Subsystem_2.$procdff$5856 ($adff): CLK=\clk, D=$0\cfblk170_reg[0][5:5], Q=\cfblk170_reg[0] [5]
+Replacing Subsystem_2.$procdff$5855 ($adff): CLK=\clk, D=$0\cfblk170_reg[0][6:6], Q=\cfblk170_reg[0] [6]
+Replacing Subsystem_2.$procdff$5854 ($adff): CLK=\clk, D=$0\cfblk170_reg[0][7:7], Q=\cfblk170_reg[0] [7]
+Replacing Subsystem_1.$procdff$5843 ($adff): CLK=\clk, D=$0\cfblk170_reg[1][7:0], Q=\cfblk170_reg[1]
+Replacing Subsystem_1.$procdff$5842 ($adff): CLK=\clk, D=$0\cfblk170_reg[0][7:0], Q=\cfblk170_reg[0]
+Replacing Subsystem_1.$procdff$5813 ($adff): CLK=\clk, D=$0\emi_15_reg[1][7:0], Q=\emi_15_reg[1]
+Replacing Subsystem_1.$procdff$5812 ($adff): CLK=\clk, D=$0\emi_15_reg[0][7:0], Q=\emi_15_reg[0]
+Replacing Subsystem_1.$procdff$5807 ($adff): CLK=\clk, D=$0\cfblk175_reg[1][7:0], Q=\cfblk175_reg[1]
+Replacing Subsystem_1.$procdff$5806 ($adff): CLK=\clk, D=$0\cfblk175_reg[0][7:0], Q=\cfblk175_reg[0]
+Replacing Subsystem_1.$procdff$5801 ($adff): CLK=\clk, D=$0\emi_80_reg[1][7:0], Q=\emi_80_reg[1]
+Replacing Subsystem_1.$procdff$5800 ($adff): CLK=\clk, D=$0\emi_80_reg[0][7:0], Q=\emi_80_reg[0]
+Replacing Subsystem_1.$procdff$5795 ($adff): CLK=\clk, D=$0\emi_225_reg[1][7:0], Q=\emi_225_reg[1]
+Replacing Subsystem_1.$procdff$5794 ($adff): CLK=\clk, D=$0\emi_225_reg[0][7:0], Q=\emi_225_reg[0]
+Replacing Subsystem_1.$procdff$5789 ($adff): CLK=\clk, D=$0\emi_31_reg[1][7:0], Q=\emi_31_reg[1]
+Replacing Subsystem_1.$procdff$5788 ($adff): CLK=\clk, D=$0\emi_31_reg[0][7:0], Q=\emi_31_reg[0]
+Replacing Subsystem_1.$procdff$5783 ($adff): CLK=\clk, D=$0\emi_145_reg[1][7:0], Q=\emi_145_reg[1]
+Replacing Subsystem_1.$procdff$5782 ($adff): CLK=\clk, D=$0\emi_145_reg[0][7:0], Q=\emi_145_reg[0]
+Replacing Subsystem_1.$procdff$5777 ($adff): CLK=\clk, D=$0\cfblk165_reg[1][7:0], Q=\cfblk165_reg[1]
+Replacing Subsystem_1.$procdff$5776 ($adff): CLK=\clk, D=$0\cfblk165_reg[0][7:0], Q=\cfblk165_reg[0]
+Replacing Subsystem_1.$procdff$5771 ($adff): CLK=\clk, D=$0\emi_217_reg[1][7:0], Q=\emi_217_reg[1]
+Replacing Subsystem_1.$procdff$5770 ($adff): CLK=\clk, D=$0\emi_217_reg[0][7:0], Q=\emi_217_reg[0]
+Replacing Subsystem_1.$procdff$5753 ($adff): CLK=\clk, D=$0\emi_56_reg[1][7:0], Q=\emi_56_reg[1]
+Replacing Subsystem_1.$procdff$5752 ($adff): CLK=\clk, D=$0\emi_56_reg[0][7:0], Q=\emi_56_reg[0]
+Replacing Subsystem_1.$procdff$5747 ($adff): CLK=\clk, D=$0\emi_48_reg[1][7:0], Q=\emi_48_reg[1]
+Replacing Subsystem_1.$procdff$5746 ($adff): CLK=\clk, D=$0\emi_48_reg[0][7:0], Q=\emi_48_reg[0]
+Replacing Subsystem_1.$procdff$5741 ($adff): CLK=\clk, D=$0\cfblk173_reg[1][7:0], Q=\cfblk173_reg[1]
+Replacing Subsystem_1.$procdff$5740 ($adff): CLK=\clk, D=$0\cfblk173_reg[0][7:0], Q=\cfblk173_reg[0]
+Replacing Subsystem_1.$procdff$5735 ($adff): CLK=\clk, D=$0\cfblk166_reg[1][7:0], Q=\cfblk166_reg[1]
+Replacing Subsystem_1.$procdff$5734 ($adff): CLK=\clk, D=$0\cfblk166_reg[0][7:0], Q=\cfblk166_reg[0]
+Replacing Subsystem_1.$procdff$5729 ($adff): CLK=\clk, D=$0\emi_257_reg[1][7:0], Q=\emi_257_reg[1]
+Replacing Subsystem_1.$procdff$5728 ($adff): CLK=\clk, D=$0\emi_257_reg[0][7:0], Q=\emi_257_reg[0]
+Replacing Subsystem_1.$procdff$5723 ($adff): CLK=\clk, D=$0\cfblk163_reg[1][7:0], Q=\cfblk163_reg[1]
+Replacing Subsystem_1.$procdff$5722 ($adff): CLK=\clk, D=$0\cfblk163_reg[0][7:0], Q=\cfblk163_reg[0]
+Replacing Subsystem_1.$procdff$5717 ($adff): CLK=\clk, D=$0\emi_177_reg[1][7:0], Q=\emi_177_reg[1]
+Replacing Subsystem_1.$procdff$5716 ($adff): CLK=\clk, D=$0\emi_177_reg[0][7:0], Q=\emi_177_reg[0]
+Replacing Subsystem_1.$procdff$5711 ($adff): CLK=\clk, D=$0\emi_72_reg[1][7:0], Q=\emi_72_reg[1]
+Replacing Subsystem_1.$procdff$5710 ($adff): CLK=\clk, D=$0\emi_72_reg[0][7:0], Q=\emi_72_reg[0]
+Replacing Subsystem_1.$procdff$5705 ($adff): CLK=\clk, D=$0\emi_121_reg[1][7:0], Q=\emi_121_reg[1]
+Replacing Subsystem_1.$procdff$5704 ($adff): CLK=\clk, D=$0\emi_121_reg[0][7:0], Q=\emi_121_reg[0]
+Replacing Subsystem_1.$procdff$5687 ($adff): CLK=\clk, D=$0\cfblk158_reg[1][7:0], Q=\cfblk158_reg[1]
+Replacing Subsystem_1.$procdff$5686 ($adff): CLK=\clk, D=$0\cfblk158_reg[0][7:0], Q=\cfblk158_reg[0]
+Replacing Subsystem_1.$procdff$5675 ($adff): CLK=\clk, D=$0\cfblk174_reg[1][7:0], Q=\cfblk174_reg[1]
+Replacing Subsystem_1.$procdff$5674 ($adff): CLK=\clk, D=$0\cfblk174_reg[0][7:0], Q=\cfblk174_reg[0]
+Replacing Subsystem_1.$procdff$5651 ($adff): CLK=\clk, D=$0\cfblk172_reg[1][7:0], Q=\cfblk172_reg[1]
+Replacing Subsystem_1.$procdff$5650 ($adff): CLK=\clk, D=$0\cfblk172_reg[0][7:0], Q=\cfblk172_reg[0]
+Replacing Subsystem_1.$procdff$5633 ($adff): CLK=\clk, D=$0\emi_137_reg[1][7:0], Q=\emi_137_reg[1]
+Replacing Subsystem_1.$procdff$5632 ($adff): CLK=\clk, D=$0\emi_137_reg[0][7:0], Q=\emi_137_reg[0]
+Replacing Subsystem_1.$procdff$5621 ($adff): CLK=\clk, D=$0\cfblk159_reg[1][7:0], Q=\cfblk159_reg[1]
+Replacing Subsystem_1.$procdff$5620 ($adff): CLK=\clk, D=$0\cfblk159_reg[0][7:0], Q=\cfblk159_reg[0]
+Replacing Subsystem_1.$procdff$5615 ($adff): CLK=\clk, D=$0\cfblk169_reg[1][7:0], Q=\cfblk169_reg[1]
+Replacing Subsystem_1.$procdff$5614 ($adff): CLK=\clk, D=$0\cfblk169_reg[0][7:0], Q=\cfblk169_reg[0]
+Replacing Subsystem_1.$procdff$5591 ($adff): CLK=\clk, D=$0\cfblk171_reg[1][7:0], Q=\cfblk171_reg[1]
+Replacing Subsystem_1.$procdff$5590 ($adff): CLK=\clk, D=$0\cfblk171_reg[0][7:0], Q=\cfblk171_reg[0]
+Replacing Subsystem_1.$procdff$5567 ($adff): CLK=\clk, D=$0\cfblk161_reg[1][7:0], Q=\cfblk161_reg[1]
+Replacing Subsystem_1.$procdff$5566 ($adff): CLK=\clk, D=$0\cfblk161_reg[0][7:0], Q=\cfblk161_reg[0]
+Replacing Subsystem_1.$procdff$5555 ($adff): CLK=\clk, D=$0\cfblk162_reg[1][7:0], Q=\cfblk162_reg[1]
+Replacing Subsystem_1.$procdff$5554 ($adff): CLK=\clk, D=$0\cfblk162_reg[0][7:0], Q=\cfblk162_reg[0]
+Replacing Subsystem_1.$procdff$5543 ($adff): CLK=\clk, D=$0\cfblk176_reg[1][7:0], Q=\cfblk176_reg[1]
+Replacing Subsystem_1.$procdff$5542 ($adff): CLK=\clk, D=$0\cfblk176_reg[0][7:0], Q=\cfblk176_reg[0]
+Replacing Subsystem_1.$procdff$5537 ($adff): CLK=\clk, D=$0\cfblk164_reg[1][7:0], Q=\cfblk164_reg[1]
+Replacing Subsystem_1.$procdff$5536 ($adff): CLK=\clk, D=$0\cfblk164_reg[0][7:0], Q=\cfblk164_reg[0]
+Replacing Subsystem_1.$procdff$5531 ($adff): CLK=\clk, D=$0\cfblk167_reg[1][7:0], Q=\cfblk167_reg[1]
+Replacing Subsystem_1.$procdff$5530 ($adff): CLK=\clk, D=$0\cfblk167_reg[0][7:0], Q=\cfblk167_reg[0]
+
+6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+Finding unused cells or wires in module \cfblk97..
+Finding unused cells or wires in module \cfblk91..
+Finding unused cells or wires in module \cfblk84..
+Finding unused cells or wires in module \cfblk81..
+Finding unused cells or wires in module \cfblk80..
+Finding unused cells or wires in module \cfblk79..
+Finding unused cells or wires in module \cfblk78..
+Finding unused cells or wires in module \cfblk77_block..
+Finding unused cells or wires in module \cfblk77..
+Finding unused cells or wires in module \cfblk72..
+Finding unused cells or wires in module \cfblk71..
+Finding unused cells or wires in module \cfblk48..
+Finding unused cells or wires in module \cfblk3_block..
+Finding unused cells or wires in module \cfblk32..
+Finding unused cells or wires in module \cfblk31..
+Finding unused cells or wires in module \cfblk3..
+Finding unused cells or wires in module \cfblk2_block..
+Finding unused cells or wires in module \cfblk28_block..
+Finding unused cells or wires in module \cfblk28..
+Finding unused cells or wires in module \cfblk21..
+Finding unused cells or wires in module \cfblk20..
+Finding unused cells or wires in module \cfblk2..
+Finding unused cells or wires in module \cfblk1_block..
+Finding unused cells or wires in module \cfblk192..
+Finding unused cells or wires in module \cfblk188..
+Finding unused cells or wires in module \cfblk185..
+Finding unused cells or wires in module \cfblk184..
+Finding unused cells or wires in module \cfblk181..
+Finding unused cells or wires in module \cfblk180..
+Finding unused cells or wires in module \cfblk168..
+Finding unused cells or wires in module \cfblk157..
+Finding unused cells or wires in module \cfblk156..
+Finding unused cells or wires in module \cfblk153..
+Finding unused cells or wires in module \cfblk15..
+Finding unused cells or wires in module \cfblk145..
+Finding unused cells or wires in module \cfblk144..
+Finding unused cells or wires in module \cfblk143..
+Finding unused cells or wires in module \cfblk137..
+Finding unused cells or wires in module \cfblk134..
+Finding unused cells or wires in module \cfblk125..
+Finding unused cells or wires in module \cfblk124..
+Finding unused cells or wires in module \cfblk121..
+Finding unused cells or wires in module \cfblk119_block..
+Finding unused cells or wires in module \cfblk119..
+Finding unused cells or wires in module \cfblk116..
+Finding unused cells or wires in module \cfblk110..
+Finding unused cells or wires in module \cfblk11..
+Finding unused cells or wires in module \cfblk109..
+Finding unused cells or wires in module \cfblk108..
+Finding unused cells or wires in module \cfblk106..
+Finding unused cells or wires in module \cfblk105..
+Finding unused cells or wires in module \cfblk100..
+Finding unused cells or wires in module \cfblk1..
+Finding unused cells or wires in module \Subsystem_2..
+Finding unused cells or wires in module \Subsystem_1..
+Finding unused cells or wires in module \Positive..
+Finding unused cells or wires in module \DotProduct_block8..
+Finding unused cells or wires in module \DotProduct_block7..
+Finding unused cells or wires in module \DotProduct_block6..
+Finding unused cells or wires in module \DotProduct_block5..
+Finding unused cells or wires in module \DotProduct_block4..
+Finding unused cells or wires in module \DotProduct_block3..
+Finding unused cells or wires in module \DotProduct_block2..
+Finding unused cells or wires in module \DotProduct_block1..
+Finding unused cells or wires in module \DotProduct_block..
+Finding unused cells or wires in module \DotProduct..
+Removed 0 unused cells and 494 unused wires.
+<suppressed ~43 debug messages>
+
+7. Executing FORMALFF pass.
+
+8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \DotProduct..
+Finding unused cells or wires in module \DotProduct_block..
+Finding unused cells or wires in module \DotProduct_block1..
+Finding unused cells or wires in module \DotProduct_block2..
+Finding unused cells or wires in module \DotProduct_block3..
+Finding unused cells or wires in module \DotProduct_block4..
+Finding unused cells or wires in module \DotProduct_block5..
+Finding unused cells or wires in module \DotProduct_block6..
+Finding unused cells or wires in module \DotProduct_block7..
+Finding unused cells or wires in module \DotProduct_block8..
+Finding unused cells or wires in module \Positive..
+Finding unused cells or wires in module \Subsystem_1..
+Finding unused cells or wires in module \Subsystem_2..
+Finding unused cells or wires in module \cfblk1..
+Finding unused cells or wires in module \cfblk100..
+Finding unused cells or wires in module \cfblk105..
+Finding unused cells or wires in module \cfblk106..
+Finding unused cells or wires in module \cfblk108..
+Finding unused cells or wires in module \cfblk109..
+Finding unused cells or wires in module \cfblk11..
+Finding unused cells or wires in module \cfblk110..
+Finding unused cells or wires in module \cfblk116..
+Finding unused cells or wires in module \cfblk119..
+Finding unused cells or wires in module \cfblk119_block..
+Finding unused cells or wires in module \cfblk121..
+Finding unused cells or wires in module \cfblk124..
+Finding unused cells or wires in module \cfblk125..
+Finding unused cells or wires in module \cfblk134..
+Finding unused cells or wires in module \cfblk137..
+Finding unused cells or wires in module \cfblk143..
+Finding unused cells or wires in module \cfblk144..
+Finding unused cells or wires in module \cfblk145..
+Finding unused cells or wires in module \cfblk15..
+Finding unused cells or wires in module \cfblk153..
+Finding unused cells or wires in module \cfblk156..
+Finding unused cells or wires in module \cfblk157..
+Finding unused cells or wires in module \cfblk168..
+Finding unused cells or wires in module \cfblk180..
+Finding unused cells or wires in module \cfblk181..
+Finding unused cells or wires in module \cfblk184..
+Finding unused cells or wires in module \cfblk185..
+Finding unused cells or wires in module \cfblk188..
+Finding unused cells or wires in module \cfblk192..
+Finding unused cells or wires in module \cfblk1_block..
+Finding unused cells or wires in module \cfblk2..
+Finding unused cells or wires in module \cfblk20..
+Finding unused cells or wires in module \cfblk21..
+Finding unused cells or wires in module \cfblk28..
+Finding unused cells or wires in module \cfblk28_block..
+Finding unused cells or wires in module \cfblk2_block..
+Finding unused cells or wires in module \cfblk3..
+Finding unused cells or wires in module \cfblk31..
+Finding unused cells or wires in module \cfblk32..
+Finding unused cells or wires in module \cfblk3_block..
+Finding unused cells or wires in module \cfblk48..
+Finding unused cells or wires in module \cfblk71..
+Finding unused cells or wires in module \cfblk72..
+Finding unused cells or wires in module \cfblk77..
+Finding unused cells or wires in module \cfblk77_block..
+Finding unused cells or wires in module \cfblk78..
+Finding unused cells or wires in module \cfblk79..
+Finding unused cells or wires in module \cfblk80..
+Finding unused cells or wires in module \cfblk81..
+Finding unused cells or wires in module \cfblk84..
+Finding unused cells or wires in module \cfblk91..
+Finding unused cells or wires in module \cfblk97..
+Finding unused cells or wires in module \top..
+
+9. Executing CHECK pass (checking for obvious problems).
+Checking module DotProduct...
+Checking module DotProduct_block...
+Checking module DotProduct_block1...
+Checking module DotProduct_block2...
+Checking module DotProduct_block3...
+Checking module DotProduct_block4...
+Checking module DotProduct_block5...
+Checking module DotProduct_block6...
+Checking module DotProduct_block7...
+Checking module DotProduct_block8...
+Checking module Positive...
+Checking module Subsystem_1...
+Checking module Subsystem_2...
+Checking module cfblk1...
+Checking module cfblk100...
+Checking module cfblk105...
+Checking module cfblk106...
+Checking module cfblk108...
+Checking module cfblk109...
+Checking module cfblk11...
+Checking module cfblk110...
+Checking module cfblk116...
+Checking module cfblk119...
+Checking module cfblk119_block...
+Checking module cfblk121...
+Checking module cfblk124...
+Checking module cfblk125...
+Checking module cfblk134...
+Checking module cfblk137...
+Checking module cfblk143...
+Checking module cfblk144...
+Checking module cfblk145...
+Checking module cfblk15...
+Checking module cfblk153...
+Checking module cfblk156...
+Checking module cfblk157...
+Checking module cfblk168...
+Checking module cfblk180...
+Checking module cfblk181...
+Checking module cfblk184...
+Checking module cfblk185...
+Checking module cfblk188...
+Checking module cfblk192...
+Checking module cfblk1_block...
+Checking module cfblk2...
+Checking module cfblk20...
+Checking module cfblk21...
+Checking module cfblk28...
+Checking module cfblk28_block...
+Checking module cfblk2_block...
+Checking module cfblk3...
+Checking module cfblk31...
+Checking module cfblk32...
+Checking module cfblk3_block...
+Checking module cfblk48...
+Checking module cfblk71...
+Checking module cfblk72...
+Checking module cfblk77...
+Checking module cfblk77_block...
+Checking module cfblk78...
+Checking module cfblk79...
+Checking module cfblk80...
+Checking module cfblk81...
+Checking module cfblk84...
+Checking module cfblk91...
+Checking module cfblk97...
+Checking module top...
+Found and reported 0 problems.
+
+10. Executing SETUNDEF pass (replace undef values with defined constants).
+
+11. Executing OPT pass (performing simple optimizations).
+
+11.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module DotProduct.
+Optimizing module DotProduct_block.
+Optimizing module DotProduct_block1.
+Optimizing module DotProduct_block2.
+Optimizing module DotProduct_block3.
+Optimizing module DotProduct_block4.
+Optimizing module DotProduct_block5.
+Optimizing module DotProduct_block6.
+Optimizing module DotProduct_block7.
+Optimizing module DotProduct_block8.
+Optimizing module Positive.
+Optimizing module Subsystem_1.
+<suppressed ~5 debug messages>
+Optimizing module Subsystem_2.
+Optimizing module cfblk1.
+Optimizing module cfblk100.
+Optimizing module cfblk105.
+Optimizing module cfblk106.
+Optimizing module cfblk108.
+Optimizing module cfblk109.
+Optimizing module cfblk11.
+Optimizing module cfblk110.
+Optimizing module cfblk116.
+Optimizing module cfblk119.
+Optimizing module cfblk119_block.
+Optimizing module cfblk121.
+Optimizing module cfblk124.
+Optimizing module cfblk125.
+Optimizing module cfblk134.
+Optimizing module cfblk137.
+<suppressed ~1 debug messages>
+Optimizing module cfblk143.
+Optimizing module cfblk144.
+Optimizing module cfblk145.
+Optimizing module cfblk15.
+Optimizing module cfblk153.
+Optimizing module cfblk156.
+Optimizing module cfblk157.
+Optimizing module cfblk168.
+Optimizing module cfblk180.
+Optimizing module cfblk181.
+Optimizing module cfblk184.
+Optimizing module cfblk185.
+Optimizing module cfblk188.
+Optimizing module cfblk192.
+Optimizing module cfblk1_block.
+Optimizing module cfblk2.
+Optimizing module cfblk20.
+Optimizing module cfblk21.
+<suppressed ~1 debug messages>
+Optimizing module cfblk28.
+Optimizing module cfblk28_block.
+Optimizing module cfblk2_block.
+Optimizing module cfblk3.
+Optimizing module cfblk31.
+Optimizing module cfblk32.
+Optimizing module cfblk3_block.
+Optimizing module cfblk48.
+Optimizing module cfblk71.
+Optimizing module cfblk72.
+Optimizing module cfblk77.
+Optimizing module cfblk77_block.
+Optimizing module cfblk78.
+Optimizing module cfblk79.
+Optimizing module cfblk80.
+Optimizing module cfblk81.
+Optimizing module cfblk84.
+Optimizing module cfblk91.
+Optimizing module cfblk97.
+Optimizing module top.
+
+11.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\DotProduct'.
+Finding identical cells in module `\DotProduct_block'.
+Finding identical cells in module `\DotProduct_block1'.
+Finding identical cells in module `\DotProduct_block2'.
+Finding identical cells in module `\DotProduct_block3'.
+Finding identical cells in module `\DotProduct_block4'.
+Finding identical cells in module `\DotProduct_block5'.
+Finding identical cells in module `\DotProduct_block6'.
+Finding identical cells in module `\DotProduct_block7'.
+Finding identical cells in module `\DotProduct_block8'.
+Finding identical cells in module `\Positive'.
+Finding identical cells in module `\Subsystem_1'.
+<suppressed ~531 debug messages>
+Finding identical cells in module `\Subsystem_2'.
+<suppressed ~3483 debug messages>
+Finding identical cells in module `\cfblk1'.
+Finding identical cells in module `\cfblk100'.
+Finding identical cells in module `\cfblk105'.
+Finding identical cells in module `\cfblk106'.
+Finding identical cells in module `\cfblk108'.
+Finding identical cells in module `\cfblk109'.
+<suppressed ~9 debug messages>
+Finding identical cells in module `\cfblk11'.
+Finding identical cells in module `\cfblk110'.
+Finding identical cells in module `\cfblk116'.
+Finding identical cells in module `\cfblk119'.
+Finding identical cells in module `\cfblk119_block'.
+Finding identical cells in module `\cfblk121'.
+<suppressed ~9 debug messages>
+Finding identical cells in module `\cfblk124'.
+Finding identical cells in module `\cfblk125'.
+Finding identical cells in module `\cfblk134'.
+Finding identical cells in module `\cfblk137'.
+Finding identical cells in module `\cfblk143'.
+Finding identical cells in module `\cfblk144'.
+Finding identical cells in module `\cfblk145'.
+Finding identical cells in module `\cfblk15'.
+Finding identical cells in module `\cfblk153'.
+Finding identical cells in module `\cfblk156'.
+Finding identical cells in module `\cfblk157'.
+Finding identical cells in module `\cfblk168'.
+<suppressed ~18 debug messages>
+Finding identical cells in module `\cfblk180'.
+Finding identical cells in module `\cfblk181'.
+Finding identical cells in module `\cfblk184'.
+Finding identical cells in module `\cfblk185'.
+Finding identical cells in module `\cfblk188'.
+Finding identical cells in module `\cfblk192'.
+Finding identical cells in module `\cfblk1_block'.
+Finding identical cells in module `\cfblk2'.
+Finding identical cells in module `\cfblk20'.
+Finding identical cells in module `\cfblk21'.
+Finding identical cells in module `\cfblk28'.
+Finding identical cells in module `\cfblk28_block'.
+Finding identical cells in module `\cfblk2_block'.
+Finding identical cells in module `\cfblk3'.
+Finding identical cells in module `\cfblk31'.
+Finding identical cells in module `\cfblk32'.
+Finding identical cells in module `\cfblk3_block'.
+Finding identical cells in module `\cfblk48'.
+Finding identical cells in module `\cfblk71'.
+Finding identical cells in module `\cfblk72'.
+Finding identical cells in module `\cfblk77'.
+Finding identical cells in module `\cfblk77_block'.
+Finding identical cells in module `\cfblk78'.
+Finding identical cells in module `\cfblk79'.
+Finding identical cells in module `\cfblk80'.
+Finding identical cells in module `\cfblk81'.
+Finding identical cells in module `\cfblk84'.
+Finding identical cells in module `\cfblk91'.
+Finding identical cells in module `\cfblk97'.
+Finding identical cells in module `\top'.
+<suppressed ~6 debug messages>
+Removed a total of 1352 cells.
+
+11.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+11.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \DotProduct..
+Finding unused cells or wires in module \DotProduct_block..
+Finding unused cells or wires in module \DotProduct_block1..
+Finding unused cells or wires in module \DotProduct_block2..
+Finding unused cells or wires in module \DotProduct_block3..
+Finding unused cells or wires in module \DotProduct_block4..
+Finding unused cells or wires in module \DotProduct_block5..
+Finding unused cells or wires in module \DotProduct_block6..
+Finding unused cells or wires in module \DotProduct_block7..
+Finding unused cells or wires in module \DotProduct_block8..
+Finding unused cells or wires in module \Positive..
+Finding unused cells or wires in module \Subsystem_1..
+Finding unused cells or wires in module \Subsystem_2..
+Finding unused cells or wires in module \cfblk1..
+Finding unused cells or wires in module \cfblk100..
+Finding unused cells or wires in module \cfblk105..
+Finding unused cells or wires in module \cfblk106..
+Finding unused cells or wires in module \cfblk108..
+Finding unused cells or wires in module \cfblk109..
+Finding unused cells or wires in module \cfblk11..
+Finding unused cells or wires in module \cfblk110..
+Finding unused cells or wires in module \cfblk116..
+Finding unused cells or wires in module \cfblk119..
+Finding unused cells or wires in module \cfblk119_block..
+Finding unused cells or wires in module \cfblk121..
+Finding unused cells or wires in module \cfblk124..
+Finding unused cells or wires in module \cfblk125..
+Finding unused cells or wires in module \cfblk134..
+Finding unused cells or wires in module \cfblk137..
+Finding unused cells or wires in module \cfblk143..
+Finding unused cells or wires in module \cfblk144..
+Finding unused cells or wires in module \cfblk145..
+Finding unused cells or wires in module \cfblk15..
+Finding unused cells or wires in module \cfblk153..
+Finding unused cells or wires in module \cfblk156..
+Finding unused cells or wires in module \cfblk157..
+Finding unused cells or wires in module \cfblk168..
+Finding unused cells or wires in module \cfblk180..
+Finding unused cells or wires in module \cfblk181..
+Finding unused cells or wires in module \cfblk184..
+Finding unused cells or wires in module \cfblk185..
+Finding unused cells or wires in module \cfblk188..
+Finding unused cells or wires in module \cfblk192..
+Finding unused cells or wires in module \cfblk1_block..
+Finding unused cells or wires in module \cfblk2..
+Finding unused cells or wires in module \cfblk20..
+Finding unused cells or wires in module \cfblk21..
+Finding unused cells or wires in module \cfblk28..
+Finding unused cells or wires in module \cfblk28_block..
+Finding unused cells or wires in module \cfblk2_block..
+Finding unused cells or wires in module \cfblk3..
+Finding unused cells or wires in module \cfblk31..
+Finding unused cells or wires in module \cfblk32..
+Finding unused cells or wires in module \cfblk3_block..
+Finding unused cells or wires in module \cfblk48..
+Finding unused cells or wires in module \cfblk71..
+Finding unused cells or wires in module \cfblk72..
+Finding unused cells or wires in module \cfblk77..
+Finding unused cells or wires in module \cfblk77_block..
+Finding unused cells or wires in module \cfblk78..
+Finding unused cells or wires in module \cfblk79..
+Finding unused cells or wires in module \cfblk80..
+Finding unused cells or wires in module \cfblk81..
+Finding unused cells or wires in module \cfblk84..
+Finding unused cells or wires in module \cfblk91..
+Finding unused cells or wires in module \cfblk97..
+Finding unused cells or wires in module \top..
+Removed 413 unused cells and 1765 unused wires.
+<suppressed ~436 debug messages>
+
+11.5. Finished fast OPT passes.
+
+12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \DotProduct..
+Finding unused cells or wires in module \DotProduct_block..
+Finding unused cells or wires in module \DotProduct_block1..
+Finding unused cells or wires in module \DotProduct_block2..
+Finding unused cells or wires in module \DotProduct_block3..
+Finding unused cells or wires in module \DotProduct_block4..
+Finding unused cells or wires in module \DotProduct_block5..
+Finding unused cells or wires in module \DotProduct_block6..
+Finding unused cells or wires in module \DotProduct_block7..
+Finding unused cells or wires in module \DotProduct_block8..
+Finding unused cells or wires in module \Positive..
+Finding unused cells or wires in module \Subsystem_1..
+Finding unused cells or wires in module \Subsystem_2..
+Finding unused cells or wires in module \cfblk1..
+Finding unused cells or wires in module \cfblk100..
+Finding unused cells or wires in module \cfblk105..
+Finding unused cells or wires in module \cfblk106..
+Finding unused cells or wires in module \cfblk108..
+Finding unused cells or wires in module \cfblk109..
+Finding unused cells or wires in module \cfblk11..
+Finding unused cells or wires in module \cfblk110..
+Finding unused cells or wires in module \cfblk116..
+Finding unused cells or wires in module \cfblk119..
+Finding unused cells or wires in module \cfblk119_block..
+Finding unused cells or wires in module \cfblk121..
+Finding unused cells or wires in module \cfblk124..
+Finding unused cells or wires in module \cfblk125..
+Finding unused cells or wires in module \cfblk134..
+Finding unused cells or wires in module \cfblk137..
+Finding unused cells or wires in module \cfblk143..
+Finding unused cells or wires in module \cfblk144..
+Finding unused cells or wires in module \cfblk145..
+Finding unused cells or wires in module \cfblk15..
+Finding unused cells or wires in module \cfblk153..
+Finding unused cells or wires in module \cfblk156..
+Finding unused cells or wires in module \cfblk157..
+Finding unused cells or wires in module \cfblk168..
+Finding unused cells or wires in module \cfblk180..
+Finding unused cells or wires in module \cfblk181..
+Finding unused cells or wires in module \cfblk184..
+Finding unused cells or wires in module \cfblk185..
+Finding unused cells or wires in module \cfblk188..
+Finding unused cells or wires in module \cfblk192..
+Finding unused cells or wires in module \cfblk1_block..
+Finding unused cells or wires in module \cfblk2..
+Finding unused cells or wires in module \cfblk20..
+Finding unused cells or wires in module \cfblk21..
+Finding unused cells or wires in module \cfblk28..
+Finding unused cells or wires in module \cfblk28_block..
+Finding unused cells or wires in module \cfblk2_block..
+Finding unused cells or wires in module \cfblk3..
+Finding unused cells or wires in module \cfblk31..
+Finding unused cells or wires in module \cfblk32..
+Finding unused cells or wires in module \cfblk3_block..
+Finding unused cells or wires in module \cfblk48..
+Finding unused cells or wires in module \cfblk71..
+Finding unused cells or wires in module \cfblk72..
+Finding unused cells or wires in module \cfblk77..
+Finding unused cells or wires in module \cfblk77_block..
+Finding unused cells or wires in module \cfblk78..
+Finding unused cells or wires in module \cfblk79..
+Finding unused cells or wires in module \cfblk80..
+Finding unused cells or wires in module \cfblk81..
+Finding unused cells or wires in module \cfblk84..
+Finding unused cells or wires in module \cfblk91..
+Finding unused cells or wires in module \cfblk97..
+Finding unused cells or wires in module \top..
+
+13. Executing RTLIL backend.
+Output filename: ../model/design_prep.il
+
+End of script. Logfile hash: 1d9b93a07e, CPU: user 0.42s system 0.02s, MEM: 52.08 MB peak
+Yosys 0.37+1 (git sha1 e1f4c5c9cbb, clang  -fPIC -Os)
+Time spent: 29% 4x opt_clean (0 sec), 11% 1x opt_expr (0 sec), ...

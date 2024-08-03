@@ -1,0 +1,215 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Thu May 23 06:51:07 2024
+# Process ID: 1442842
+# Current directory: /doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6
+# Command line: vivado -mode batch -source /doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/vivado_sim.tcl
+# Log file: /doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/vivado.log
+# Journal file: /doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/vivado.jou
+# Running On: user-System-Product-Name, OS: Linux, CPU Frequency: 5493.685 MHz, CPU Physical cores: 24, Host memory: 134788 MB
+#-----------------------------------------------------------
+source /doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/vivado_sim.tcl
+# create_project -force sim_132 /doc/xzh/vivado_test
+# add_files -norecurse /doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/Subsystem_vivado.v
+# add_files -fileset sim_1 -norecurse /doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/Subsystem_tb.v
+# set_property is_global_include true [get_files /doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/Subsystem_vivado.v]
+# import_files -force -norecurse
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sim_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
+# update_compile_order -fileset sources_1
+# update_compile_order -fileset sim_1
+# set_property top Subsystem_tb [get_filesets sim_1]
+# set_property top_lib xil_defaultlib [get_filesets sim_1]
+# launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'Subsystem_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/doc/xzh/vivado_test/sim_132.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/doc/Xilinx/Vivado/2023.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'Subsystem_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/doc/xzh/vivado_test/sim_132.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj Subsystem_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/doc/xzh/vivado_test/sim_132.srcs/sources_1/imports/sampleModel61442_pp_12_1_sub_o9_6/Subsystem_vivado.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Subsystem
+INFO: [VRFC 10-2263] Analyzing Verilog file "/doc/xzh/vivado_test/sim_132.srcs/sim_1/imports/sampleModel61442_pp_12_1_sub_o9_6/Subsystem_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cfblk78
+INFO: [VRFC 10-311] analyzing module cfblk134
+INFO: [VRFC 10-311] analyzing module cfblk71
+INFO: [VRFC 10-311] analyzing module cfblk21
+INFO: [VRFC 10-311] analyzing module cfblk79
+INFO: [VRFC 10-311] analyzing module cfblk48
+INFO: [VRFC 10-311] analyzing module DotProduct_block4
+INFO: [VRFC 10-311] analyzing module cfblk125
+INFO: [VRFC 10-311] analyzing module DotProduct_block
+INFO: [VRFC 10-311] analyzing module cfblk84
+INFO: [VRFC 10-311] analyzing module cfblk184
+INFO: [VRFC 10-311] analyzing module cfblk2
+INFO: [VRFC 10-311] analyzing module cfblk20
+INFO: [VRFC 10-311] analyzing module cfblk124
+INFO: [VRFC 10-311] analyzing module DotProduct_block3
+INFO: [VRFC 10-311] analyzing module cfblk121
+INFO: [VRFC 10-311] analyzing module cfblk109
+INFO: [VRFC 10-311] analyzing module cfblk77
+INFO: [VRFC 10-311] analyzing module cfblk180
+INFO: [VRFC 10-311] analyzing module DotProduct_block2
+INFO: [VRFC 10-311] analyzing module cfblk97
+INFO: [VRFC 10-311] analyzing module cfblk3
+INFO: [VRFC 10-311] analyzing module cfblk2_block
+INFO: [VRFC 10-311] analyzing module cfblk116
+INFO: [VRFC 10-311] analyzing module cfblk15
+INFO: [VRFC 10-311] analyzing module cfblk31
+INFO: [VRFC 10-311] analyzing module DotProduct_block8
+INFO: [VRFC 10-311] analyzing module cfblk108
+INFO: [VRFC 10-311] analyzing module cfblk145
+INFO: [VRFC 10-311] analyzing module cfblk143
+INFO: [VRFC 10-311] analyzing module cfblk28_block
+INFO: [VRFC 10-311] analyzing module DotProduct_block7
+INFO: [VRFC 10-311] analyzing module cfblk1
+INFO: [VRFC 10-311] analyzing module DotProduct_block1
+INFO: [VRFC 10-311] analyzing module cfblk72
+INFO: [VRFC 10-311] analyzing module cfblk157
+INFO: [VRFC 10-311] analyzing module cfblk81
+INFO: [VRFC 10-311] analyzing module Positive
+INFO: [VRFC 10-311] analyzing module cfblk1_block
+INFO: [VRFC 10-311] analyzing module DotProduct_block6
+INFO: [VRFC 10-311] analyzing module DotProduct_block5
+INFO: [VRFC 10-311] analyzing module cfblk192
+INFO: [VRFC 10-311] analyzing module cfblk106
+INFO: [VRFC 10-311] analyzing module cfblk188
+INFO: [VRFC 10-311] analyzing module cfblk100
+INFO: [VRFC 10-311] analyzing module cfblk11
+INFO: [VRFC 10-311] analyzing module cfblk91
+INFO: [VRFC 10-311] analyzing module cfblk156
+INFO: [VRFC 10-311] analyzing module DotProduct
+INFO: [VRFC 10-311] analyzing module cfblk119
+INFO: [VRFC 10-311] analyzing module cfblk77_block
+INFO: [VRFC 10-311] analyzing module cfblk28
+INFO: [VRFC 10-311] analyzing module cfblk80
+INFO: [VRFC 10-311] analyzing module cfblk137
+INFO: [VRFC 10-311] analyzing module cfblk153
+INFO: [VRFC 10-311] analyzing module cfblk119_block
+INFO: [VRFC 10-311] analyzing module cfblk3_block
+INFO: [VRFC 10-311] analyzing module cfblk110
+INFO: [VRFC 10-311] analyzing module cfblk32
+INFO: [VRFC 10-311] analyzing module cfblk181
+INFO: [VRFC 10-311] analyzing module cfblk185
+INFO: [VRFC 10-311] analyzing module cfblk168
+INFO: [VRFC 10-311] analyzing module cfblk144
+INFO: [VRFC 10-311] analyzing module cfblk105
+INFO: [VRFC 10-311] analyzing module Subsystem
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'Subsystem' [/doc/zgl/resamplesource/5.22_183/Verilog_hdlsrc/sampleModel61442_pp_12_1_sub_o9_6/Subsystem.v:106]
+INFO: [VRFC 10-311] analyzing module Subsystem_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/doc/xzh/vivado_test/sim_132.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/doc/xzh/vivado_test/sim_132.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Subsystem_tb_behav xil_defaultlib.Subsystem_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /doc/Xilinx/Vivado/2023.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Subsystem_tb_behav xil_defaultlib.Subsystem_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.cfblk80
+Compiling module xil_defaultlib.Positive
+Compiling module xil_defaultlib.cfblk2
+Compiling module xil_defaultlib.cfblk2_block
+Compiling module xil_defaultlib.cfblk100
+Compiling module xil_defaultlib.cfblk106
+Compiling module xil_defaultlib.cfblk156
+Compiling module xil_defaultlib.cfblk143
+Compiling module xil_defaultlib.cfblk20
+Compiling module xil_defaultlib.cfblk11
+Compiling module xil_defaultlib.DotProduct_block4
+Compiling module xil_defaultlib.cfblk72
+Compiling module xil_defaultlib.cfblk144
+Compiling module xil_defaultlib.DotProduct_block5
+Compiling module xil_defaultlib.cfblk181
+Compiling module xil_defaultlib.cfblk180
+Compiling module xil_defaultlib.DotProduct_block1
+Compiling module xil_defaultlib.cfblk184
+Compiling module xil_defaultlib.cfblk79
+Compiling module xil_defaultlib.cfblk91
+Compiling module xil_defaultlib.cfblk78
+Compiling module xil_defaultlib.DotProduct_block
+Compiling module xil_defaultlib.cfblk28
+Compiling module xil_defaultlib.cfblk28_block
+Compiling module xil_defaultlib.cfblk31
+Compiling module xil_defaultlib.cfblk188
+Compiling module xil_defaultlib.cfblk71
+Compiling module xil_defaultlib.DotProduct_block3
+Compiling module xil_defaultlib.cfblk32
+Compiling module xil_defaultlib.cfblk192
+Compiling module xil_defaultlib.cfblk121
+Compiling module xil_defaultlib.cfblk168
+Compiling module xil_defaultlib.cfblk134
+Compiling module xil_defaultlib.cfblk125
+Compiling module xil_defaultlib.DotProduct_block6
+Compiling module xil_defaultlib.cfblk137
+Compiling module xil_defaultlib.cfblk109
+Compiling module xil_defaultlib.cfblk116
+Compiling module xil_defaultlib.cfblk157
+Compiling module xil_defaultlib.cfblk84
+Compiling module xil_defaultlib.cfblk124
+Compiling module xil_defaultlib.DotProduct_block8
+Compiling module xil_defaultlib.cfblk105
+Compiling module xil_defaultlib.cfblk21
+Compiling module xil_defaultlib.DotProduct
+Compiling module xil_defaultlib.cfblk110
+Compiling module xil_defaultlib.cfblk81
+Compiling module xil_defaultlib.cfblk77
+Compiling module xil_defaultlib.cfblk77_block
+Compiling module xil_defaultlib.cfblk15
+Compiling module xil_defaultlib.cfblk153
+Compiling module xil_defaultlib.cfblk48
+Compiling module xil_defaultlib.cfblk145
+Compiling module xil_defaultlib.cfblk108
+Compiling module xil_defaultlib.cfblk3
+Compiling module xil_defaultlib.cfblk3_block
+Compiling module xil_defaultlib.cfblk119
+Compiling module xil_defaultlib.cfblk119_block
+Compiling module xil_defaultlib.cfblk185
+Compiling module xil_defaultlib.cfblk97
+Compiling module xil_defaultlib.DotProduct_block2
+Compiling module xil_defaultlib.DotProduct_block7
+Compiling module xil_defaultlib.cfblk1
+Compiling module xil_defaultlib.cfblk1_block
+Compiling module xil_defaultlib.Subsystem
+Compiling module xil_defaultlib.Subsystem_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Subsystem_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/doc/xzh/vivado_test/sim_132.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Subsystem_tb_behav -key {Behavioral:sim_1:Functional:Subsystem_tb} -tclbatch {Subsystem_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source Subsystem_tb.tcl
+## current_wave_config
+**************TEST COMPLETED (PASSED)**************
+$stop called at time : 160 ns : File "/doc/xzh/vivado_test/sim_132.srcs/sim_1/imports/sampleModel61442_pp_12_1_sub_o9_6/Subsystem_tb.v" Line 115
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Subsystem_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+# open_vcd /doc/xzh/vivado_test/xsim_dump_1.vcd
+# log_vcd /testbench/*
+WARNING: [Simtcl 6-216] No such HDL Object /testbench/*
+# run 10ns
+**************TEST COMPLETED (PASSED)**************
+**************TEST COMPLETED (PASSED)**************
+# close_vcd
+INFO: [Common 17-206] Exiting Vivado at Thu May 23 06:51:15 2024...
